@@ -1,0 +1,302 @@
+@media(max-width:992px)
+{
+    /* header  .second
+{
+    justify-content: center;
+}
+
+header .contains 
+{
+    justify-content: center;
+} */
+
+header 
+{
+    display: none;
+}
+
+#heading 
+{
+    box-shadow: 3px 5px 10px #ddc5c5;
+}
+
+#heading .menu
+{
+    display: block;
+    outline: none;
+    border: none;
+    background: transparent ;
+}
+
+#heading .menu span
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+   
+}
+
+#heading .container 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*-------- offcanvas css start ----------*/
+.offcanvas 
+{
+    width: 100%;
+    max-width: 350px;
+}
+
+.offcanvas-header .logo a
+{
+    padding-left: 57px;
+}
+
+
+
+.offcanvas-body .search input {
+    padding: 12px 18px 12px 44px;
+    border: 1px solid var(--gray-scale-gray--100);
+border-radius: 6px 0 0 6px;
+width: 80%;
+
+}
+
+.offcanvas-body .search input:focus 
+{
+    outline: none;
+}
+
+.offcanvas-body .search input::placeholder 
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 15px;
+line-height: 140%;
+color: var(--gray-scale-gray--500);
+
+}
+
+.offcanvas-body .search form 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.offcanvas-body .search form span 
+{
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #1A1A1A;
+}
+
+.offcanvas-body .search button {
+
+    padding: 12px 24px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--gray-scale-white);
+    padding: 14px 24px;
+    background: var(--branding-success);
+    border-radius: 0 6px 6px 0;
+    
+    border: none;
+    display: inline-block;
+    width: 30%;
+}
+
+.offcanvas-body .contains
+{
+    margin-top: 30px;
+}
+
+
+.offcanvas-body .contains .wishlist 
+{
+    display: inline-flex;
+    line-height: 0;
+    align-items: center;
+    justify-content: center;
+    padding-right: 16px;
+    border-right: 1px solid var(--gray-scale-gray--200);
+}
+
+.offcanvas-body .contains .contains_two 
+{
+    margin-left: 16px;
+}
+
+.offcanvas-body .contains .contains_two .details
+{
+    margin-left: 16px;
+}
+
+.offcanvas-body .contains .contains_two .details span 
+{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+color: var(--gray-scale-gray--900);
+}
+
+.offcanvas-body .contains .contains_two .cart .bag
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+.offcanvas-body .contains .contains_two .cart 
+{
+    position: relative;
+}
+
+.offcanvas-body .contains .contains_two .cart .two 
+{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 10px;
+line-height: 100%;
+text-align: center;
+color: var(--gray-scale-white);
+background: var(--branding-success-dark);
+border: 1px solid var(--gray-scale-white);
+border-radius: 16px;
+padding: 4.5px 6px 4.5px 6px;
+position: absolute;
+top: 0;
+right: 0;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 18px;
+height: 18px;
+
+}
+
+.offcanvas-body .contains .contains_two .details p 
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 11px;
+line-height: 120%;
+color: var(--gray-scale-gray--700);
+margin-bottom: 0;
+}
+
+.offcanvas-body .contains_three
+{
+   margin: 30px 0;
+}
+
+
+.offcanvas-body .contains_three .location {
+    color: #333;
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+    justify-content: center;
+}
+
+.offcanvas-body .contains_three p {
+    margin-bottom: 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #000;
+    margin-left: 8px;
+}
+
+
+
+
+.offcanvas-body .second .sign-links {
+    padding-left: 20px;
+
+}
+
+.offcanvas-body .second .sign-links a {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: black;
+}
+
+.offcanvas-body .second .sign-links a:hover {
+    color: var(--branding-success);
+}
+
+.offcanvas-body .second .sign-links .or {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: var(--gray-scale-gray--300);
+}
+
+.offcanvas-body .second .lang_money {
+    padding-right: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.offcanvas-body .second .lang select,
+.offcanvas-body .second .money select {
+    margin-right: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+    color: black;
+}
+
+.offcanvas-body .second {
+    justify-content: end;
+    margin-bottom: 20px;
+    background: goldenrod;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------- offcanvas css end ----------*/
+
+
+}

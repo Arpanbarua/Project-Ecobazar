@@ -1,0 +1,269 @@
+:root {
+    --gren-gray-scale-900: #002603;
+    --gren-gray-scale-800: #173b1a;
+    --gren-gray-scale-700: #2b572e;
+    --gren-gray-scale-600: #406b42;
+    --gren-gray-scale-500: #618062;
+    --gren-gray-scale-400: #7a997c;
+    --gren-gray-scale-300: #96b297;
+    --gren-gray-scale-200: #b4ccb4;
+    --gren-gray-scale-100: #dae5da;
+    --gren-gray-scale-50: #edf2ee;
+    --gray-scale-gray--900: #1a1a1a;
+    --gray-scale-gray--800: #333;
+    --gray-scale-gray--700: #4d4d4d;
+    --gray-scale-gray--600: #666;
+    --gray-scale-gray--500: #808080;
+    --gray-scale-gray--400: #999;
+    --gray-scale-gray--300: #b3b3b3;
+    --gray-scale-gray--200: #ccc;
+    --gray-scale-gray--100: #e6e6e6;
+    --gray-scale-gray--50: #f2f2f2;
+    --gray-scale-white: #fff;
+    --branding-success-bright: #84d187;
+    --branding-success: #00b207;
+    --branding-success-dark: #2c742f;
+    --branding-warning: #ff8a00;
+    --branding-error: #ea4b48;
+    --font-family: "Poppins", sans-serif;
+    /* --second-family: "Segoe Script", sans-serif; */
+    --third-family: "Dancing Script", sans-serif;
+}
+
+@font-face {
+    font-family: --second-family;
+    src: url(../fonts/segoescript.ttf);
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+
+
+/*-------- header  css start ----------*/
+header {
+    box-shadow: 0 1px 0 0 #e5e5e5;
+    background: var(--gray-scale-gray--800);
+    padding: 13px 0;
+}
+
+header .contains .location {
+    color: var(--gray-scale-gray--300);
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+    justify-content: center;
+}
+
+header .contains p {
+    margin-bottom: 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: var(--gray-scale-gray--300);
+    margin-left: 8px;
+}
+
+header .second .sign-links {
+    padding-left: 20px;
+
+}
+
+header .second .sign-links a {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: var(--gray-scale-gray--300);
+}
+
+header .second .sign-links a:hover {
+    color: var(--branding-success);
+}
+
+header .second .sign-links .or {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: var(--gray-scale-gray--300);
+}
+
+header .second .lang_money {
+    padding-right: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header .second .lang select,
+header .second .money select {
+    margin-right: 20px;
+    background: transparent;
+    border: none;
+    outline: 1px solid var(--gray-scale-gray--600);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--gray-scale-gray--300);
+}
+
+header .second {
+    justify-content: end;
+}
+
+
+
+/*-------- header  css end ----------*/
+
+/*-------- heading css start ----------*/
+#heading {
+    padding: 27.5px;
+}
+
+
+
+#heading .search input {
+    padding: 12px 18px 12px 44px;
+    border: 1px solid var(--gray-scale-gray--100);
+border-radius: 6px 0 0 6px;
+width: 80%;
+
+}
+
+#heading .search input:focus 
+{
+    outline: none;
+}
+
+#heading .search input::placeholder 
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 15px;
+line-height: 140%;
+color: var(--gray-scale-gray--500);
+
+}
+
+#heading .search form 
+{
+    position: relative;
+    display: flex;
+   
+}
+
+#heading .search form span 
+{
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #1A1A1A;
+}
+
+#heading .search button {
+
+    padding: 12px 24px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--gray-scale-white);
+    padding: 14px 24px;
+    background: var(--branding-success);
+    border-radius: 0 6px 6px 0;
+    
+    border: none;
+    display: inline-block;
+    width: 20%;
+}
+
+#heading .contains .wishlist 
+{
+    display: inline-flex;
+    line-height: 0;
+    align-items: center;
+    justify-content: center;
+    padding-right: 16px;
+    border-right: 1px solid var(--gray-scale-gray--200);
+}
+
+#heading .contains .contains_two 
+{
+    margin-left: 16px;
+}
+
+#heading .contains .contains_two .details
+{
+    margin-left: 16px;
+}
+
+#heading .contains .contains_two .details span 
+{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+color: var(--gray-scale-gray--900);
+}
+
+#heading .contains .contains_two .cart .bag
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+#heading .contains .contains_two .cart 
+{
+    position: relative;
+}
+
+#heading .contains .contains_two .cart .two 
+{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 10px;
+line-height: 100%;
+text-align: center;
+color: var(--gray-scale-white);
+background: var(--branding-success-dark);
+border: 1px solid var(--gray-scale-white);
+border-radius: 16px;
+padding: 4.5px 6px 4.5px 6px;
+position: absolute;
+top: 0;
+right: 0;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 18px;
+height: 18px;
+
+}
+
+#heading .contains .contains_two .details p 
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 11px;
+line-height: 120%;
+color: var(--gray-scale-gray--700);
+margin-bottom: 0;
+}
+
+#heading .menu 
+{
+    display: none;
+} 
+
+/*-------- heading css end ----------*/
