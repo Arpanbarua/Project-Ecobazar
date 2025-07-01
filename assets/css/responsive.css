@@ -1,3 +1,49 @@
+:root {
+    --gren-gray-scale-900: #002603;
+    --gren-gray-scale-800: #173b1a;
+    --gren-gray-scale-700: #2b572e;
+    --gren-gray-scale-600: #406b42;
+    --gren-gray-scale-500: #618062;
+    --gren-gray-scale-400: #7a997c;
+    --gren-gray-scale-300: #96b297;
+    --gren-gray-scale-200: #b4ccb4;
+    --gren-gray-scale-100: #dae5da;
+    --gren-gray-scale-50: #edf2ee;
+    --gray-scale-gray--900: #1a1a1a;
+    --gray-scale-gray--800: #333;
+    --gray-scale-gray--700: #4d4d4d;
+    --gray-scale-gray--600: #666;
+    --gray-scale-gray--500: #808080;
+    --gray-scale-gray--400: #999;
+    --gray-scale-gray--300: #b3b3b3;
+    --gray-scale-gray--200: #ccc;
+    --gray-scale-gray--100: #e6e6e6;
+    --gray-scale-gray--50: #f2f2f2;
+    --gray-scale-white: #fff;
+    --branding-success-bright: #84d187;
+    --branding-success: #00b207;
+    --branding-success-dark: #2c742f;
+    --branding-warning: #ff8a00;
+    --branding-error: #ea4b48;
+    --font-family: "Poppins", sans-serif;
+    /* --second-family: "Segoe Script", sans-serif; */
+    --third-family: "Dancing Script", sans-serif;
+}
+
+@font-face {
+    font-family: second-family;
+    src: url(../fonts/segoescript.ttf);
+}
+
+
+@media(min-width:993px) and (max-width:1200px)
+{
+    #heading .search button
+    {
+        padding: 12px 14px;
+    }
+}
+
 @media(max-width:992px)
 {
     /* header  .second
@@ -49,7 +95,23 @@ header
 {
     width: 100%;
     max-width: 350px;
+   
+    
 }
+
+/* .offcanvas-body 
+{
+    background-image: url('../images/vegetables.jpg');
+    background-position: center;
+    background-size: cover;
+   
+} */
+
+
+
+
+
+
 
 .offcanvas-header .logo a
 {
@@ -275,7 +337,57 @@ margin-bottom: 0;
 .offcanvas-body .second {
     justify-content: end;
     margin-bottom: 20px;
-    background: goldenrod;
+    
+}
+
+/* navbar  */
+
+
+
+.offcanvas .offcanvas-body .dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+.offcanvas .offcanvas-body .dropdown .btn span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+.offcanvas .offcanvas-body .dropdown .btn p {
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-white);
+    margin: 0 8px;
+}
+
+.offcanvas .offcanvas-body .dropdown .btn {
+    display: flex;
+    align-items: center;
+    background: var(--branding-success);
+    padding: 18px 24px;
+    margin-right: 16px;
+    border-radius: 0;
+    border: none;
+}
+
+.offcanvas .offcanvas-body .dropdown .dropdown-menu a 
+{
+    padding: 15px 18px;
+   font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray--500);
+}
+
+.offcanvas .offcanvas-body .dropdown .dropdown-menu
+{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 
@@ -284,19 +396,91 @@ margin-bottom: 0;
 
 
 
+.offcanvas .offcanvas-body .navbar-nav a.dropdown-toggle::after
+{
+    display: none;
+}
+
+.offcanvas .offcanvas-body .navbar-nav .nav-link span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    color: var(--branding-success-bright);
+}
+
+/* .offcanvas .offcanvas-body .navbar-nav .nav-link span
+{
+    display: none;
+} */
+.offcanvas .offcanvas-body .navbar-nav .nav-link p{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--branding-success);
+   
+    padding: 17px 0;
+    margin-bottom: 0;
+    margin-right: 4px;
+
+    
+}
+
+.offcanvas .offcanvas-body .navbar-nav .nav-link
+{
+    display: flex;
+   padding: 0 14px;
+    margin: 0 16px;
+    align-items: center;
+    outline: 1px solid rgb(76, 209, 55, 0.4);
+    border-radius: 13px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    
+}
+
+.offcanvas .offcanvas-body .navbar-nav .nav-link p:hover {
+
+    color: var(--branding-success);
+}
+
+.offcanvas .offcanvas-body .navbar-nav .dropdown-menu
+{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 0;
+    width: 90%;
+    
+}
+
+.offcanvas .offcanvas-body .navbar-nav .dropdown-menu a
+{
+   padding: 15px 19px;
+   font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--branding-success);
+}
 
 
 
 
-
-
-
-
-
-
-
+/* navbar  */
 
 /*-------- offcanvas css end ----------*/
+
+/*-------- mobile-bottom css start ----------*/
+#mobile-footer
+{
+    display: block;
+}
+/*-------- mobile-bottom css end ----------*/
+
+/*-------- search-box css start ----------*/
+
+/*-------- search-box css end ----------*/
+
 
 
 }

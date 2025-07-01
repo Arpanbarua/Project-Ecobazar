@@ -32,14 +32,14 @@
     <header>
         <div class="container">
             <div class="row justify-content-between align-items-center">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6">
                     <div class="d-flex contains align-items-center">
                         <span class="location"><iconify-icon icon="mynaui:location" width="20"
                                 height="20"></iconify-icon></span>
                         <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
                     </div>
                 </div>
-                <div class="col-xl-6 ">
+                <div class="col-xl-6 col-lg-6 ">
                     <div class="d-flex second align-items-center ">
                         <div class="d-flex lang_money">
                             <div class="lang">
@@ -73,10 +73,10 @@
     <section id="heading">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-lg-3">
                     <a href="./index.html"><img src="./assets/images/logo.png" alt="logo" class="img-fluid"></a>
                 </div>
-                <div class="d-none d-xl-block col-xl-5 search">
+                <div class="d-none d-xl-block d-lg-block col-xl-5 col-lg-5 search">
                     <form action="#">
                         <input type="text" placeholder="Search">
 
@@ -84,7 +84,7 @@
                         <button type="submit">Search</button>
                     </form>
                 </div>
-                <div class="d-none d-xl-block col-xl-3">
+                <div class="d-none d-xl-block d-lg-block col-xl-3 col-lg-3">
                     <div class="d-flex contains align-items-center justify-content-end">
                         <span class="wishlist"><iconify-icon icon="gridicons:heart-outline" width="32"
                                 height="32"></iconify-icon></span>
@@ -126,7 +126,7 @@
         </div>
         <div class="offcanvas-body">
 
-              <div class="d-flex second align-items-center justify-content-center">
+            <div class="d-flex second align-items-center justify-content-center">
                 <div class="d-flex lang_money">
                     <div class="lang">
                         <select name="" id="">
@@ -149,24 +149,133 @@
                 </div>
             </div>
 
-            <div class="d-flex contains_three align-items-center">
+            <!-- navbar ul  -->
+            <!-- dropdown button -->
+            <div class="dropdown ps-5 pb-4">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <span><iconify-icon icon="ic:round-menu" width="24" height="24"></iconify-icon></span>
+                    <p>All Categories</p>
+                    <span><iconify-icon icon="ep:arrow-down" width="24" height="24"></iconify-icon></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <!-- dropdown button -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li> -->
+                <!-- 1 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <p>Home</p>
+                        <span><iconify-icon icon="basil:plus-outline" width="24" height="24"></iconify-icon></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <!-- 1 -->
+
+                <!-- 2 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <p>Shop</p>
+                        <span><iconify-icon icon="basil:plus-outline" width="24" height="24"></iconify-icon></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <!-- 2 -->
+
+
+                <!-- 3 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <p>Pages</p>
+                        <span><iconify-icon icon="basil:plus-outline" width="24" height="24"></iconify-icon></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <!-- 3 -->
+
+                <!-- 4 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <p>Blog</p>
+                        <span><iconify-icon icon="basil:plus-outline" width="24" height="24"></iconify-icon></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <!-- 4 -->
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <p>About Us</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <p>Contact Us</p>
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+
+
+
+
+            <!-- location -->
+            <!-- <div class="d-flex contains_three align-items-center">
                 <span class="location"><iconify-icon icon="mynaui:location" width="20"
                         height="20"></iconify-icon></span>
                 <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
-            </div>
-
-          
+            </div> -->
 
 
 
-            <div class="search">
+
+
+            <!-- <div class="search">
                 <form action="#">
                     <input type="text" placeholder="Search">
 
                     <span><iconify-icon icon="iconoir:search" width="24" height="24"></iconify-icon></span>
                     <button type="submit">Search</button>
                 </form>
-            </div>
+            </div> -->
 
             <div class="d-flex contains align-items-center justify-content-center">
                 <span class="wishlist"><iconify-icon icon="gridicons:heart-outline" width="32"
@@ -187,10 +296,203 @@
 
 
 
-
         </div>
     </div>
     <!-- =====  offcanvas section end    ===== -->
+
+
+    <!-- =====  nav section start  ===== -->
+
+
+    <section id="nav">
+        <nav class="navbar navbar-expand-lg d-none d-xl-block">
+            <div class="container">
+                <!-- =====  dropdown button  ===== -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span><iconify-icon icon="ic:round-menu" width="24" height="24"></iconify-icon></span>
+                        <p>All Categories</p>
+                        <span><iconify-icon icon="ep:arrow-down" width="24" height="24"></iconify-icon></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <!-- =====  dropdown button  ===== -->
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li> -->
+                        <!-- 1 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <p>Home</p>
+                                <span><iconify-icon icon="ep:arrow-down" width="24" height="24"></iconify-icon></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <!-- 1 -->
+
+                        <!-- 2 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <p>Shop</p>
+                                <span><iconify-icon icon="ep:arrow-down" width="24" height="24"></iconify-icon></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <!-- 2 -->
+
+
+                        <!-- 3 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <p>Pages</p>
+                                <span><iconify-icon icon="ep:arrow-down" width="24" height="24"></iconify-icon></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <!-- 3 -->
+
+                        <!-- 4 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <p>Blog</p>
+                                <span><iconify-icon icon="ep:arrow-down" width="24" height="24"></iconify-icon></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <!-- 4 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <p>About Us</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <p>Contact Us</p>
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                    <div class="d-flex call align-items-center">
+                        <span><iconify-icon icon="mingcute:phone-call-line" width="24"
+                                height="24"></iconify-icon></span>
+                        <a href="tel:+(219) 555-0114">(219) 555-0114</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- =====  nav section end    ===== -->
+
+
+    <!-- =====  mobile-footer section start  ===== -->
+
+    <section id="mobile-footer" class="d-xl-none d-lg-none d-md-none">
+
+        <!-- <div class="row justify-content-center align-items-center">
+                <div class="box col-2">
+                    <span><iconify-icon icon="streamline:shopping-bag-hand-bag-2" width="24" height="24"></iconify-icon></span>
+                    <p class="mb-0">Cart</p>
+                </div>
+                <div class="box col-2">
+                    <span><iconify-icon icon="bxs:offer" width="24" height="24"></iconify-icon></iconify-icon></span>
+                    <p class="mb-0">Offers</p>
+                </div>
+                <div class="col-2 box">
+                    <span><iconify-icon icon="tdesign:search" width="24" height="24"></iconify-icon></span>
+                    <p class="mb-0">Search</p>
+                </div>
+            </div> -->
+
+        <div class="d-flex justify-content-center align-items-center justify-content-between">
+            <div class=" box">
+                <span><iconify-icon icon="ic:sharp-home" width="24" height="24"></iconify-icon></span>
+                <p class="mb-0">Home</p>
+            </div>
+            <div class="box">
+                <span><iconify-icon icon="streamline:shopping-bag-hand-bag-2" width="24"
+                        height="24"></iconify-icon></span>
+                <p class="mb-0">Cart</p>
+            </div>
+            <div class="box">
+                <span class="search_icon"><iconify-icon icon="tdesign:search" width="24" height="24"></iconify-icon></span>
+                <p class="mb-0">Search</p>
+            </div>
+            <div class="box ">
+                <span><iconify-icon icon="bxs:offer" width="24" height="24"></iconify-icon></iconify-icon></span>
+                <p class="mb-0">Offers</p>
+            </div>
+            <div class=" box">
+                <span><iconify-icon icon="tdesign:user-filled" width="24" height="24"></iconify-icon></span>
+                <p class="mb-0">Account</p>
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <!-- =====  mobile-footer section end    ===== -->
+
+    <!-- =====  search section start  ===== -->
+    <div id="search-box">
+        <div class="container">
+            <span class="cross"><iconify-icon icon="codex:cross" width="24" height="24"></iconify-icon></span>
+            <form action="#">
+                <input type="text" placeholder="e.g. Brinjal, tomato, etc.">
+                <button type="submit" class="searchbtn">
+                    <span><iconify-icon icon="tdesign:search" width="24" height="24"></iconify-icon></span>
+                </button>
+            </form>
+
+        </div>
+    </div>
+    <!-- =====  search section end    ===== -->
 
 
 

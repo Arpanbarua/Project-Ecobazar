@@ -31,7 +31,7 @@
 }
 
 @font-face {
-    font-family: --second-family;
+    font-family: second-family;
     src: url(../fonts/segoescript.ttf);
 }
 
@@ -65,6 +65,11 @@ header .contains p {
     color: var(--gray-scale-gray--300);
     margin-left: 8px;
 }
+
+/* header .container>.row 
+{
+    align-items: center;
+} */
 
 header .second .sign-links {
     padding-left: 20px;
@@ -129,35 +134,31 @@ header .second {
 #heading .search input {
     padding: 12px 18px 12px 44px;
     border: 1px solid var(--gray-scale-gray--100);
-border-radius: 6px 0 0 6px;
-width: 80%;
+    border-radius: 6px 0 0 6px;
+    width: 80%;
 
 }
 
-#heading .search input:focus 
-{
+#heading .search input:focus {
     outline: none;
 }
 
-#heading .search input::placeholder 
-{
+#heading .search input::placeholder {
     font-family: var(--font-family);
-font-weight: 400;
-font-size: 15px;
-line-height: 140%;
-color: var(--gray-scale-gray--500);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    color: var(--gray-scale-gray--500);
 
 }
 
-#heading .search form 
-{
+#heading .search form {
     position: relative;
     display: flex;
-   
+
 }
 
-#heading .search form span 
-{
+#heading .search form span {
     position: absolute;
     left: 16px;
     top: 50%;
@@ -180,14 +181,13 @@ color: var(--gray-scale-gray--500);
     padding: 14px 24px;
     background: var(--branding-success);
     border-radius: 0 6px 6px 0;
-    
+
     border: none;
     display: inline-block;
     width: 20%;
 }
 
-#heading .contains .wishlist 
-{
+#heading .contains .wishlist {
     display: inline-flex;
     line-height: 0;
     align-items: center;
@@ -196,26 +196,323 @@ color: var(--gray-scale-gray--500);
     border-right: 1px solid var(--gray-scale-gray--200);
 }
 
-#heading .contains .contains_two 
-{
+#heading .contains .contains_two {
     margin-left: 16px;
 }
 
-#heading .contains .contains_two .details
-{
+#heading .contains .contains_two .details {
     margin-left: 16px;
 }
 
-#heading .contains .contains_two .details span 
+#heading .contains .contains_two .details span {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--gray-scale-gray--900);
+}
+
+#heading .contains .contains_two .cart .bag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+#heading .contains .contains_two .cart {
+    position: relative;
+}
+
+#heading .contains .contains_two .cart .two {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--gray-scale-white);
+    background: var(--branding-success-dark);
+    border: 1px solid var(--gray-scale-white);
+    border-radius: 16px;
+    padding: 4.5px 6px 4.5px 6px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+
+}
+
+#heading .contains .contains_two .details p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 120%;
+    color: var(--gray-scale-gray--700);
+    margin-bottom: 0;
+}
+
+#heading .menu {
+    display: none;
+}
+
+/*-------- heading css end ----------*/
+
+
+/*-------- navbar css start ----------*/
+#nav {
+    background: var(--gray-scale-gray--50);
+}
+
+#nav .container>.dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+#nav .container>.dropdown .btn span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+#nav .container>.dropdown .btn p {
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-white);
+    margin: 0 8px;
+}
+
+#nav .container>.dropdown .btn {
+    display: flex;
+    align-items: center;
+    background: var(--branding-success);
+    padding: 18px 24px;
+    margin-right: 16px;
+    border-radius: 0;
+    border: none;
+}
+
+#nav .container>.dropdown .dropdown-menu
 {
+    border-radius: 0;
+    border: none;
+    padding: 10px 26px 10px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 0;
+}
+
+
+#nav .container>.dropdown .dropdown-menu a 
+{
+    padding: 10px 15px;
+   font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray--500);
+}
+
+#nav .container>.dropdown .dropdown-menu a:hover 
+{
+    color: var(--branding-success);
+    background: transparent;
+}
+
+
+#nav .navbar {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+/* #nav .navbar-nav
+{
+    padding: 17.5px 0;
+} */
+
+#nav .navbar-nav a.dropdown-toggle::after
+{
+    display: none;
+}
+
+#nav .navbar-nav .nav-link span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    color: #808080;
+}
+#nav .navbar-nav .nav-link p{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray--500);
+   
+    padding: 17px 0;
+    margin-bottom: 0;
+    margin-right: 4px;
+    
+}
+
+#nav .navbar-nav .nav-link
+{
+    display: flex;
+    padding-top:0 ;
+    padding-bottom: 0;
+    margin: 0 16px;
+    align-items: center;
+}
+
+#nav .navbar-nav .nav-link p:hover {
+
+    color: var(--branding-success);
+}
+
+#nav .navbar-nav .dropdown-menu
+{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#nav .navbar-nav .dropdown-menu a
+{
+   padding: 15px 18px;
+   font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray--500);
+}
+
+#nav .call span
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+#nav .call a 
+{
+    text-decoration: none;
     font-family: var(--font-family);
 font-weight: 500;
 font-size: 14px;
-line-height: 100%;
+line-height: 150%;
 color: var(--gray-scale-gray--900);
+margin-left: 10px;
 }
 
-#heading .contains .contains_two .cart .bag
+/*-------- navbar css end ----------*/
+
+/*-------- mobile-bottom css start ----------*/
+#mobile-footer
+{
+    position: fixed;
+    bottom: 0;
+    
+    padding: 15px;
+    width: 100%;
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 3;
+    background: #fff;
+}
+
+#mobile-footer .box
+{
+    text-align: center;
+    margin: 0 10px;
+}
+
+#mobile-footer .box:last-of-type 
+{
+    margin-right: 0;
+}
+
+#mobile-footer .box span 
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    color: var(--branding-success);
+}
+
+/* #mobile-footer .box p 
+{
+    color: #fff;
+} */
+
+/*-------- mobile-bottom css end ----------*/
+
+#search-box
+{
+   
+    
+    background-color: #333;
+    width: 100%;
+    height: 0;
+    transition: 0.3s;
+    position: absolute;
+    top: 0;
+     display: flex;
+      justify-content: center;
+     align-items: center;
+    text-align: center;
+    z-index: 2;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+#search-box.search_active
+{
+   height: 100vh;
+}
+
+#search-box .cross 
+{
+    position: absolute;
+    top: 29px;
+    right: 11px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    border-radius: 12px;
+}
+
+#search-box .cross:hover 
+{
+    border-radius: 50%;
+}
+
+#search-box.search_active .cross
+{
+   display: inline-flex;
+}
+
+
+#search-box form button
+{
+    
+    border: none;
+    border-radius: 12px;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    outline: 1px solid #fff;
+    color: #fff;
+}
+#search-box form button span 
 {
     display: inline-flex;
     align-items: center;
@@ -223,47 +520,17 @@ color: var(--gray-scale-gray--900);
     line-height: 0;
 }
 
-#heading .contains .contains_two .cart 
+#search-box form input
 {
-    position: relative;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: white;
+  border-radius: 12px;
 }
 
-#heading .contains .contains_two .cart .two 
+#search-box form input:focus 
 {
-    font-family: var(--font-family);
-font-weight: 500;
-font-size: 10px;
-line-height: 100%;
-text-align: center;
-color: var(--gray-scale-white);
-background: var(--branding-success-dark);
-border: 1px solid var(--gray-scale-white);
-border-radius: 16px;
-padding: 4.5px 6px 4.5px 6px;
-position: absolute;
-top: 0;
-right: 0;
-display: inline-flex;
-align-items: center;
-justify-content: center;
-width: 18px;
-height: 18px;
-
+    border: none;
+    outline: none;
 }
-
-#heading .contains .contains_two .details p 
-{
-    font-family: var(--font-family);
-font-weight: 400;
-font-size: 11px;
-line-height: 120%;
-color: var(--gray-scale-gray--700);
-margin-bottom: 0;
-}
-
-#heading .menu 
-{
-    display: none;
-} 
-
-/*-------- heading css end ----------*/
