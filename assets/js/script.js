@@ -10,5 +10,7 @@ searchbtn.addEventListener('click', function(){
 crossbtn.addEventListener('click', function(){
     searchbox.classList.remove('search_active');
    
-})
+});
+
+
  
