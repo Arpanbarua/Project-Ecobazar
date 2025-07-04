@@ -26,17 +26,23 @@
     --branding-warning: #ff8a00;
     --branding-error: #ea4b48;
     --font-family: "Poppins", sans-serif;
-    /* --second-family: "Segoe Script", sans-serif; */
+    --second-family: "Segoe Script", sans-serif;
     --third-family: "Dancing Script", sans-serif;
 }
 
 @font-face {
-    font-family: second-family;
-    src: url(../fonts/segoescript.ttf);
+    font-family: "Segoe Script";
+    src: url("../fonts/segoescript.ttf") format("truetype");
 }
 
 body {
     font-family: var(--font-family);
+}
+
+html, body {
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 
@@ -484,6 +490,8 @@ margin-left: 10px;
 
 /*-------- mobile-bottom css end ----------*/
 
+/*-------- search-box css start ----------*/
+
 #search-box
 {
    
@@ -568,3 +576,192 @@ margin-left: 10px;
     border: none;
     outline: none;
 }
+/*-------- search-box css end ----------*/
+
+/*-------- banner css start ----------*/
+#banner 
+{
+    padding: 80px 0;
+}
+
+#banner .contains p:first-of-type
+{
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+
+color: var(--branding-success);
+margin-bottom: 8px;
+}
+
+#banner .contains p:last-of-type 
+{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+color: var(--gren-gray-scale-500);
+margin-bottom: 32px;
+}
+
+#banner .contains h4
+{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 56px;
+line-height: 120%;
+color: var(--gren-gray-scale-900);
+margin-bottom: 20px;
+}
+
+#banner .contains a
+{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--gray-scale-white);
+    background: var(--branding-success);
+    border-radius: 43px;
+    padding: 16px 40px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#banner .contains a:hover 
+{
+    background: transparent;
+    outline: 1px solid var(--branding-success);
+    color: #333;
+} 
+
+#banner .banner-img
+{
+    position: relative;
+}
+
+#banner .banner-img .offer
+{
+    border-radius: 50%;
+background: var(--branding-warning);
+width: 100px;
+height: 100px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 20%;
+right: 19px;
+}
+
+#banner .banner-img .offer p:last-of-type
+{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+text-align: center;
+color: var(--gray-scale-white);
+margin-bottom: 0;
+} 
+
+#banner .banner-img .offer p:first-of-type 
+{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 32px;
+line-height: 120%;
+text-align: center;
+color: var(--gray-scale-white);
+margin-bottom: 0;
+
+
+}
+
+#banner .prev 
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    
+    position: absolute;
+    left: -2%;
+    top: 38%;
+    transform: translateY(-50%);
+    background: var(--gray-scale-white);
+stroke-width: 1px;
+stroke: var(--gren-gray-scale-100);
+outline: 1px solid var(--gren-gray-scale-100);
+color: var(--gren-gray-scale-900);
+padding: 14px;
+border-radius: 50%;
+width: 45px;
+height: 45px;
+z-index: 2;
+}
+
+#banner .next
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    
+     position: absolute;
+    right: 4%;
+    top: 38%;
+    transform: translateY(-50%);
+    border-radius: 100%;
+background: var(--gray-scale-white);
+stroke-width: 1px;
+stroke: var(--gren-gray-scale-100);
+outline: 1px solid var(--gren-gray-scale-100);
+color: var(--gren-gray-scale-900);
+width: 45px;
+height: 45px;
+}
+
+#banner .slick-dots 
+{
+    /* background: red; */
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+    margin-bottom: 0;
+}
+
+#banner .slick-dots li button 
+{
+    width: 12px;
+    height: 12px;
+    background: var(--gren-gray-scale-200);
+    border-radius: 50%;
+    color: transparent;
+    border: none;
+    margin: 0 4px;
+}
+
+#banner .slick-dots .slick-active button
+{
+    background: var(--branding-success);
+    border-radius: 50px;
+    width: 20px;
+
+}
+
+/* .slick-track{
+  padding-top: 50px;
+} */
+
+
+
+/*-------- banner css end ----------*/

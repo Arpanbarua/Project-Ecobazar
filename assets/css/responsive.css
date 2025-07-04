@@ -26,12 +26,12 @@
     --branding-warning: #ff8a00;
     --branding-error: #ea4b48;
     --font-family: "Poppins", sans-serif;
-    /* --second-family: "Segoe Script", sans-serif; */
+    --second-family: "Segoe Script", sans-serif;
     --third-family: "Dancing Script", sans-serif;
 }
 
 @font-face {
-    font-family: second-family;
+    font-family: "Segoe Script";
     src: url(../fonts/segoescript.ttf);
 }
 
@@ -42,6 +42,33 @@
     {
         padding: 12px 14px;
     }
+
+    /*-------- banner css start ----------*/
+    #banner 
+    {
+        padding-top: 40px;
+    }
+    #banner .contains 
+    {
+        text-align: center;
+    }
+
+    #banner .contains h4 
+    {
+        font-size: 40px;
+    }
+    #banner .slick-dots
+    {
+        padding-left: 0;
+    }
+    #banner .banner-img .offer
+    {
+        top: 20% ;
+        right: 100px;
+    }
+
+
+    /*-------- banner css end ----------*/
 }
 
 @media(max-width:992px)
@@ -477,10 +504,56 @@ margin-bottom: 0;
 }
 /*-------- mobile-bottom css end ----------*/
 
-/*-------- search-box css start ----------*/
+/*-------- banner css start ----------*/
+#banner 
+{
+    padding-top: 60px;
+}
+#banner .banner-img .offer
+{
+width: 90px;
+height: 90px;
+top: 4%;
+right: 13px;
+}
 
-/*-------- search-box css end ----------*/
+#banner .contains 
+{
+    text-align: center;
+}
 
+
+#banner .contains h4
+{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#banner .contains p:last-of-type
+{
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+#banner .next
+{
+    top: 47%;
+}
+
+#banner .prev
+{
+    top: 47%;
+}
+
+#banner .slick-dots 
+{
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+
+
+/*-------- banner css end ----------*/
 
 
 }
