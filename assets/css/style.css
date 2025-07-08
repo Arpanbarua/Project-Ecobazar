@@ -1028,10 +1028,35 @@ height: 45px;
 z-index: 2;
 }
 
-
 #featured .slick-dots 
 {
-    /* background: red; */
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#featured .slick-dots li button 
+{
+    color: transparent;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #B4CCB4;
+    margin: 0 4px;
+    border: none;
+}
+
+#featured .slick-dots .slick-active button 
+{
+    border-radius: 50px;
+    width: 20px;
+    background: var(--branding-success);
+}
+
+/* #featured .slick-dots 
+{
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -1057,7 +1082,7 @@ z-index: 2;
     border-radius: 50px;
     width: 20px;
 
-}
+} */
 
 /* .products_parent {
   position: relative;

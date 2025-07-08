@@ -74,6 +74,12 @@ html, body {
 
 
     /*-------- banner css end ----------*/
+
+/*-------- featured css start ----------*/
+
+/*-------- featured css end ----------*/
+
+
 }
 
 @media(max-width:992px)
@@ -513,6 +519,7 @@ margin-bottom: 0;
 #banner 
 {
     padding-top: 60px;
+    padding-bottom: 40px;
 }
 #banner .banner-img .offer
 {
@@ -564,13 +571,28 @@ right: 13px;
 /*-------- featured css start ----------*/
 #featured .next
 {
-    top: 47%;
+    top: -5%;
+    right: 0;
+    width: 18px;
+    height: 18px;
 }
 
 #featured .prev
 {
-    top: 47%;
+    top: -5%;
+    left: 0;
+    width: 18px;
+    height: 18px;
 }
+
+#featured .container>h5 
+{
+    
+font-size: 32px;
+
+margin-bottom: 40px;
+}
+
 /*-------- featured css end ----------*/
 
 
