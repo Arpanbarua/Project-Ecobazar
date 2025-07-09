@@ -25,10 +25,13 @@ $(function () {
 
     searchbtn.on('click', function () {
         searchbox.toggleClass('search_active');
+         $('body').addClass('no-scroll');
     });
 
     crossbtn.on('click', function () {
         searchbox.removeClass('search_active');
+        $('body').removeClass('no-scroll');
+
     });
 
 

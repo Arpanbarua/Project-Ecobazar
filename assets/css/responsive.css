@@ -35,11 +35,7 @@
     src: url(../fonts/segoescript.ttf);
 }
 
-html, body {
-    /* height: auto;
-    overflow-x: hidden; */
-    overflow-y: scroll;
-}
+
 
 @media(min-width:993px) and (max-width:1200px)
 {
