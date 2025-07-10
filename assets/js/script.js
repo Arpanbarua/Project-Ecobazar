@@ -97,6 +97,9 @@ $(function () {
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     // for tooltips
 
+    // category filter
+    $('.category-button').categoryFilter();
+
 });
 
 
