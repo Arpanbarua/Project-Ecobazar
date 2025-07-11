@@ -102,8 +102,54 @@
 }
 /*-------- service css end ----------*/
 
+/*-------- ad-card css start ----------*/
+#ad-card .boxes .box-2 .details
+{
+    padding: 46px 15px 46px 0;
+}
+
+#ad-card .boxes .box-2 .details p 
+{
+    
+text-align: center;
+}
+
+#ad-card .boxes .box-2 .details h4 
+{
+    
+font-size: 26px;
+
+text-align: center;
+}
+
+#ad-card .boxes .box-1:last-of-type .details {
+    padding: 46px 0 46px 20px;
+}
+
+#ad-card .boxes .box-1:last-of-type h4, #ad-card .boxes .box-1 .details h4
+{
+    font-size: 26px;
+}
+
+#ad-card .boxes .box-1:first-of-type .details a, #ad-card .boxes .box-1:last-of-type .details a, #ad-card .boxes .box-2 .details a 
+{
+    padding: 14px 20px;
+}
+
+
+
+/*-------- ad-card css end ----------*/
+
+
+
+
 
 }
+
+
+
+
+
 
 @media(max-width:992px)
 {
@@ -703,6 +749,22 @@ margin-bottom: 24px;
 }
 
 /*-------- service css end ----------*/
+
+/*-------- ad-card css start ----------*/
+
+#ad-card 
+{
+    margin-bottom: 40px;
+}
+
+
+ #ad-card .boxes .box
+{
+    width: calc( 100% - 24px);
+    margin: 12px;
+    
+}
+/*-------- ad-card css end ----------*/
 
 
 }

@@ -1227,7 +1227,7 @@ header .second {
 }
 
 #categories {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 #categories .container>h5 {
@@ -1465,3 +1465,207 @@ border-radius: 8px
 }
 
 /*-------- service css end ----------*/
+
+/*-------- ad-card css start ----------*/
+#ad-card 
+{
+    margin-bottom: 100px;
+}
+#ad-card .boxes .box-1
+{
+    background-image: url('../images/milk.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+
+}
+
+
+#ad-card .boxes .box-1 .details 
+{
+    padding: 40px 0 40px 24px;
+}
+
+#ad-card .boxes .box-1 .details p 
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+text-align: justify;
+color: rgba(255, 255, 255, 0.8);
+margin-bottom: 16px;
+}
+
+#ad-card .boxes .box-1 .details p span 
+{
+    font-weight: 500;
+font-size: 20px;
+color: var(--gray-scale-white);
+}
+
+#ad-card .boxes .box-1 .details h4 
+{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 32px;
+line-height: 120%;
+text-align: justify;
+color: var(--gray-scale-white);
+margin-bottom: 8px;
+}
+
+#ad-card .boxes .box-1 .details a 
+{
+    background: var(--gray-scale-white);
+    border-radius: 43px;
+padding: 14px 32px;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+line-height: 120%;
+text-align: justify;
+color: var(--branding-success);
+text-decoration: none;
+display: inline-flex;
+align-items: center;
+}
+
+#ad-card .boxes .box-1 .details a span 
+{
+    
+    display: inline-flex;
+    line-height: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#ad-card .boxes .box-1 .details a:hover 
+{
+    color: var(--gray-scale-gray--900);
+}
+
+#ad-card .boxes .box-1:last-of-type 
+{
+    background-image: url('../images/breakfast.png');
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#ad-card .boxes .box-1:last-of-type .details 
+{
+    padding: 46px 0 46px 32px;
+}
+
+#ad-card .boxes .box-1:last-of-type h4 
+{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 32px;
+line-height: 120%;
+color: var(--gren-gray-scale-900);
+margin-bottom: 20px;
+}
+
+#ad-card .boxes .box-1:last-of-type p 
+{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--gren-gray-scale-900);
+margin-bottom: 8px;
+}
+
+#ad-card .boxes .box-2
+{
+    background-image: url('../images/drinks.png');
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#ad-card .boxes .box-2 .details
+{
+    padding: 46px 20px 46px 0;
+}
+
+#ad-card .boxes .box-2
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#ad-card .boxes .box-2 .details p 
+{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--gren-gray-scale-900);
+margin-bottom: 8px;
+}
+
+#ad-card .boxes .box-2 .details h4 
+{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 32px;
+line-height: 120%;
+color: var(--gren-gray-scale-900);
+margin-bottom: 20px;
+}
+
+#ad-card .boxes .box-2 .details a 
+{
+    background: var(--gray-scale-white);
+    border-radius: 43px;
+padding: 14px 32px;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+line-height: 120%;
+text-align: justify;
+color: var(--branding-success);
+text-decoration: none;
+display: inline-flex;
+align-items: center;
+}
+
+#ad-card .boxes .box-2 .details a span 
+{
+    
+    display: inline-flex;
+    line-height: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#ad-card .boxes .box-2 .details a:hover 
+{
+    color: var(--gray-scale-gray--900);
+}
+
+
+ #ad-card .boxes .box
+{
+    width: calc( 33.3333% - 24px);
+    margin: 12px;
+    
+}
+
+
+
+
+/*-------- ad-card css end ----------*/
