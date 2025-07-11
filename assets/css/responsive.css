@@ -591,6 +591,70 @@ margin-bottom: 40px;
 
 /*-------- featured css end ----------*/
 
+/*-------- categories css start ----------*/
+#categories .buttons button 
+{
+    padding: 0 6px 8px 6px;
+    font-size: 14px;
+    margin: 1px;
+
+}
+
+#categories .buttons button::before 
+{
+    
+    top: 1px;
+    right: -4px;
+   
+}
+
+#categories .filter-box 
+{
+    padding-bottom: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#categories .container>h5 
+{
+    
+font-size: 32px;
+
+margin-bottom: 24px;
+}
+
+#categories .buttons
+{
+    padding-bottom: 30px;
+}
+
+
+/*-------- categories css end ----------*/
+
+/*-------- timer css start ----------*/
+#timer {
+   
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+#timer .container>h4
+{
+    font-size: 32px;
+}
+
+#timer .countdown .hq-countdown .hq-countdown-item .hq-number {
+    
+    font-size: 26px;
+    
+}
+
+#timer .countdown .hq-countdown .hq-countdown-item .hq-label {
+   
+    font-size: 12px;
+   
+}
+/*-------- timer css end ----------*/
 
 
 
