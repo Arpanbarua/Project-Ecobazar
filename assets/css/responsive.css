@@ -665,6 +665,10 @@ margin-bottom: 40px;
 /*-------- featured css end ----------*/
 
 /*-------- categories css start ----------*/
+#categories {
+    padding-bottom: 20px;
+}
+
 #categories .buttons button 
 {
     padding: 0 6px 8px 6px;
@@ -672,6 +676,7 @@ margin-bottom: 40px;
     margin: 1px;
 
 }
+
 
 #categories .buttons button::before 
 {
