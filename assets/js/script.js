@@ -108,6 +108,9 @@ $(function () {
   }
 });
 
+// for aos
+AOS.init();
+
 });
 
 
