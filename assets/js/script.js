@@ -52,7 +52,7 @@ $(function () {
     $(".products_parent").slick({
         infinite: true,
         slidesToShow: 5,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         dots: true,
         arrows: true,
         prevArrow: `<span class="prev"><iconify-icon icon="solar:arrow-left-linear" width="24" height="24"></iconify-icon></span>`,

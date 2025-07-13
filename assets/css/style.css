@@ -832,7 +832,7 @@ header .second {
 }
 
 #featured .product_child .img-box img {
-    width: 100%;
+    width: 100%; 
     display: block;
 }
 
@@ -990,6 +990,34 @@ header .second {
     width: 20px;
     background: var(--branding-success);
 }
+
+
+/* test */
+/* .products_parent .slick-slide {
+  box-sizing: border-box;
+}
+
+.products_parent .product_child {
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+.products_parent .product_child:hover {
+  border-color: var(--branding-success-dark);
+  box-shadow: 0 0 12px rgba(32, 181, 38, 0.32);
+} */
+
+.products_parent .slick-track {
+  padding-right: 10px;
+}
+
+.products_parent .slick-list {
+  padding-right: 10px;
+  /* overflow: visible; Critical */
+}
+
+/* test */
+
 
 
 /*-------- featured css end ----------*/
