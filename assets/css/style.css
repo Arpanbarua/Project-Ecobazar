@@ -1008,11 +1008,11 @@ header .second {
 } */
 
 .products_parent .slick-track {
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
 .products_parent .slick-list {
-  padding-right: 10px;
+  padding-right: 5px;
   /* overflow: visible; Critical */
 }
 
