@@ -1694,6 +1694,319 @@ align-items: center;
 }
 
 
-
-
 /*-------- ad-card css end ----------*/
+
+/*-------- client css start ----------*/
+
+#client 
+{
+    background: var(--gren-gray-scale-50);
+    padding: 100px 0 470px 0;
+}
+
+/* #client .row 
+{
+    margin-bottom: 90px;
+} */
+
+#client .container>h4 
+{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 40px;
+line-height: 120%;
+text-align: center;
+color: var(--gren-gray-scale-900);
+margin-bottom: 43px;
+}
+
+#client .card-box 
+{
+    margin-bottom: 30px;
+}
+
+#client .card-box .quote-box
+{
+    padding: 32px;
+    background: var(--gray-scale-white);
+    text-align: center;
+    border: 1px solid var(--gray-scale-gray--100);
+    border-radius: 10px;
+    z-index: 2;
+    
+}
+
+
+#client .card-box .quote-box .quote span 
+{
+    color: var(--branding-success);
+}
+#client .card-box .quote-box .quote .text p 
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+color: var(--gren-gray-scale-600);
+}
+
+#client .card-box .shape
+{
+    text-align: center;
+    position: static;
+    margin-top: -12px;
+    
+}
+
+#client .card-box .shape span
+{
+    
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+    justify-content: center;
+    color: var(--gray-scale-white);
+    z-index: -1;
+    
+}
+
+#client .card-box .details h5 
+{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+color: var(--gren-gray-scale-900);    
+margin-bottom: 0;
+margin-top: 14px;
+}
+
+#client .card-box .details p
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+text-align: center;
+color: var(--gren-gray-scale-500);
+margin-bottom: 0;
+}
+
+
+
+/*-------- client css end ----------*/
+
+/*-------- video css start ----------*/
+
+#video 
+{
+    position: relative;
+    
+    margin-top: -366px;
+    
+}
+
+#video .container 
+{
+    background-image: url('../images/Video/img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0;
+    border-radius: 20px;
+    
+   
+
+}
+
+#video .contains p
+{
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+text-align: center;
+color: var(--gray-scale-white);
+margin-bottom: 12px;
+}
+
+#video .contains h4
+{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 36px;
+line-height: 120%;
+text-align: center;
+color: var(--gray-scale-white);
+margin-bottom: 32px;
+}
+
+#video .contains
+{
+    text-align: center;
+}
+
+#video .contains .play
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid var(--gray-scale-white);
+    display: inline-flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#video .contains .play span 
+{
+    /* padding: 28px 32px; */
+   
+   line-height: 0;
+   
+    color: var(--gray-scale-white);
+}
+
+#video .contains .play span:hover 
+{
+    transform: scale(1.5);
+    
+    cursor: pointer;
+
+}
+
+/*-------- video css end ----------*/
+
+/*-------- news css start ----------*/
+#news 
+{
+    padding: 50px 0;
+}
+#news .card-box 
+{
+    padding: 24px;
+}
+
+#news .card-box:hover 
+{
+    box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.1);
+background: var(--gray-scale-white);
+border-radius: 8px;
+}
+
+#news .card-box .contains h4 
+{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+color: var(--gren-gray-scale-900);
+    margin-bottom: 8px;
+}
+
+#news .card-box .contains p 
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gren-gray-scale-500);
+    margin-bottom: 20px;
+}
+
+#news .card-box .contains a 
+{
+    text-decoration: none;
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 120%;
+color: var(--branding-success);
+border-radius: 43px;
+display: inline-flex;
+align-items: center;
+}
+
+#news .card-box .contains a span
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+#news .card-box .contains a:hover 
+{
+    color:  var(--gray-scale-gray--700);
+}
+
+#news .card-box .contains a:hover span 
+{
+    transform: rotate(180deg);
+}
+
+
+#news .img-box 
+{
+    position: relative;
+}
+
+#news .img-box .date 
+{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+padding: 6px 15px 10px 15px;
+background: var(--gray-scale-white);
+}
+
+#news .img-box .date h4
+{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+text-align: center;
+color: var(--gray-scale-gray--900);
+margin-bottom: 0;
+}
+
+#news .img-box .date p 
+{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-align: center;
+color: var(--gray-scale-gray--500);
+margin-bottom: 0;
+}
+
+#news .container>h4 
+{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 40px;
+line-height: 120%;
+text-align: center;
+color: var(--gren-gray-scale-900);
+margin-bottom: 50px;
+}
+
+#news .card-box:nth-of-type(2) .img-box .date, #news .card-box:nth-of-type(3) .img-box .date
+{
+    background: rgba(255, 255, 255, 0.9);
+opacity: 0.9;
+}
+
+/*-------- news css end ----------*/

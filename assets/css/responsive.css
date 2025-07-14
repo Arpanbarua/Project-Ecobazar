@@ -771,5 +771,49 @@ margin-bottom: 24px;
 }
 /*-------- ad-card css end ----------*/
 
+/*-------- client css start ----------*/
+#client 
+{
+    padding-top: 30px;
+}
+
+
+#client .container>h4
+{
+    font-size: 30px;
+}
+/*-------- client css end ----------*/
+
+
+/*-------- video css start ----------*/
+#video .contains h4
+{
+    
+font-size: 28px;
+
+}
+
+#video 
+{
+    
+    
+    margin-top: -438px;
+    
+}
+/*-------- video css end ----------*/
+
+/*-------- news css start ----------*/
+#news .container>h4
+{
+    font-size: 30px;
+}
+
+#news .row 
+{
+    margin: 0 5px;
+}
+/*-------- news css end ----------*/
+
+
 
 }
