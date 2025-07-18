@@ -111,6 +111,136 @@ $(function () {
 // for aos
 AOS.init();
 
+// for product description
+ $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  vertical: true,
+  centerMode: false,
+  centerPadding: "0px",
+  focusOnSelect: true, 
+  arrows: true, 
+  prevArrow: `<span class="prev"><iconify-icon icon="simple-line-icons:arrow-up" width="24" height="24"></iconify-icon></span>`,
+  nextArrow: `<span class="next"><iconify-icon icon="simple-line-icons:arrow-down" width="24" height="24"></iconify-icon></span>`,
+   responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+       arrows: false,
+        vertical: false,
+      }
+    },
+    // {
+    //   breakpoint: 600,
+    //   settings: {
+    //     slidesToShow: 2,
+    //     slidesToScroll: 2
+    //   }
+    // },
+    // {
+    //   breakpoint: 480,
+    //   settings: {
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1
+    //   }
+    // }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+
+
+});
+
+// for zoom
+$(".example").imagezoomsl();
+
+//for product_desc inc & dec
+let inc = document.querySelector("#product_desc .inc");
+let dec = document.querySelector("#product_desc .dec");
+let text = document.querySelector("#product_desc .text");
+
+
+//for real price
+let price_real = document.querySelector("#product_desc .price1");
+let rawPrice = price_real.textContent; // or innerText
+let price = parseFloat(rawPrice.replace(/[^0-9.]/g, '')); // removes $ and parses number
+
+//for discounted price
+let price_dis = document.querySelector("#product_desc .price_d");
+let rawPrice2 = price_dis.textContent; // or innerText
+let price_d = parseFloat(rawPrice2.replace(/[^0-9.]/g, '')); // removes $ and parses number
+console.log(price_d);
+
+inc.addEventListener('click', function() {
+  let count = Number(text.value);
+
+  if(count+1 <16)
+  {
+    count++;
+    text.value = count;
+    dec.style.cursor = 'cursor';
+    let total = price*count;
+    let total_dis = price_d * count;
+    price_real.textContent = `$${total.toFixed(2)}`;
+    price_dis.textContent = `$${total_dis.toFixed(2)}`;
+  }
+
+  else
+  {
+    inc.style.cursor = 'not-allowed';
+   
+  }
+
+  
+});
+
+
+dec.addEventListener('click', function()
+{
+   let count = Number(text.value);
+
+   if(count >1)
+   {
+    count--;
+    text.value = count;
+    inc.style.cursor = 'pointer';
+    let total = price*count;
+    let total_dis = price_d*count;
+    price_real.textContent = `$${total.toFixed(2)}`;
+    price_dis.textContent = `$${total_dis.toFixed(2)}`;
+   }
+   else
+   {
+     dec.style.cursor = 'not-allowed';
+   }
+  
+});
+
+
+
+
+
+
+
+
+
+
+
+
+//for product_desc inc & dec
+
+
+
 });
 
 

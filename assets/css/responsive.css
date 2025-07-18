@@ -140,9 +140,24 @@ text-align: center;
 
 /*-------- ad-card css end ----------*/
 
+/*-------- product_desc css start ----------*/
 
 
+.magnifier 
+{
+    
+    left: 30% !important;
+    width: 300px !important;
+    height:  300px !important;
+   
+}
 
+#product_desc .contains a
+{
+    padding: 14px 35px;
+}
+
+/*-------- product_desc css end ----------*/
 
 }
 
@@ -813,6 +828,60 @@ font-size: 28px;
     margin: 0 5px;
 }
 /*-------- news css end ----------*/
+
+/*-------- product_desc css start ----------*/
+.magnifier 
+{
+    
+    left: 50% !important;
+    transform: translateX(-50%);
+    width: 250px !important;
+    height:  250px !important;
+    border: 1px solid var(--branding-success) !important;
+   
+}
+
+#product_desc .box 
+{
+    margin-top: 20px;
+}
+
+#product_desc .header h4
+{
+    font-size: 27px;
+    margin-right: 2px;
+}
+
+#product_desc .second-header , #product_desc .prices, #product_desc .header
+{
+    justify-content: center;
+}
+
+#product_desc .fifth
+{
+    text-align: justify;
+}
+
+#product_desc .contains, #product_desc .brands
+{
+    flex-direction: column;
+}
+
+#product_desc .brands .icons 
+{
+    margin-top: 10px;
+}
+
+#product_desc .contains a 
+{
+    margin: 10px 0;
+}
+
+#product_desc {
+    padding-top: 40px;
+}
+/*-------- product_desc css end ----------*/
+
 
 
 
