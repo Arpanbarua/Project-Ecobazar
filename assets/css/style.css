@@ -1834,11 +1834,22 @@ header .second {
 
 /*-------- news css start ----------*/
 #news {
-    padding: 50px 0;
+    padding-top: 50px;
+    border-bottom: 1px solid var(--gren-gray-scale-200);
+    z-index: 2;
+}
+
+#news .row 
+{
+    padding-bottom: 100px;
 }
 
 #news .card-box {
     padding: 24px;
+    background: var(--gray-scale-white);
+    width: calc(33.33% - 24px);
+    margin: 12px;
+    border-radius: 8px;
 }
 
 #news .card-box:hover {
@@ -1893,14 +1904,16 @@ header .second {
 }
 
 
-#news .img-box {
+#news .img-box  {
     position: relative;
 }
 
 #news .img-box .date {
+  
     position: absolute;
-    left: 20px;
     bottom: 20px;
+    left: 20px;
+    display: inline-block;
     margin-bottom: 20px;
     border-radius: 4px;
     padding: 6px 15px 10px 15px;
@@ -2267,3 +2280,247 @@ color: var(--gray-scale-gray--900);
 
 
 /*-------- product_desc css end ----------*/
+
+/*-------- subscribe css start ----------*/
+#subscribe 
+{
+    padding-top: 356px;
+    border-top: 1px solid var(--gray-scale-gray--200);
+    background: var(--gren-gray-scale-50);
+    position: relative;
+    margin-top: -368px;
+    z-index: -1;
+}
+#subscribe .row 
+{
+    padding: 50px 0;
+}
+#subscribe .contains p:first-of-type
+{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 24px;
+line-height: 150%;
+color: var(--gren-gray-scale-900);
+margin-bottom: 4px;
+}
+
+
+#subscribe .contains p:last-of-type
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gren-gray-scale-400);
+margin-bottom: 0;
+}
+
+#subscribe .contains_two
+{
+    position: relative;
+}
+
+#subscribe .contains_two input
+{
+    background: var(--gray-scale-white);
+    border: 1px solid var(--gren-gray-scale-100);
+border-radius: 46px;
+padding: 14px 24px;
+width: 100%;
+
+}
+
+#subscribe .contains_two input::placeholder
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: var(--gren-gray-scale-500);
+}
+
+#subscribe .contains_two input:focus 
+{
+    
+    outline: none;
+}
+
+#subscribe .contains_two button 
+{
+    background: var(--branding-success);
+    border-radius: 43px;
+padding: 16px 40px;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 125%;
+color: var(--gray-scale-white);
+border: none;
+position: absolute;
+right: 12px;
+top: 0;
+}
+
+#subscribe .contains_two button:hover
+{
+    color: var(--gray-scale-gray--800);
+    background: transparent;
+    outline: 1px solid var(--branding-success);
+}
+/*-------- subscribe css end ----------*/
+
+/*-------- footer css start ----------*/
+#footer 
+{
+    background: var(--gren-gray-scale-900);
+    padding-bottom: 20px;
+}
+
+
+#footer .about h4
+{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+color: var(--gray-scale-white);
+margin-bottom: 16px;
+}
+
+#footer .about p:first-of-type
+{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gren-gray-scale-500);
+    margin-bottom: 16px;
+}
+
+#footer .about p:last-of-type 
+{
+ font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: var(--gren-gray-scale-500);
+margin-bottom: 0;
+border: none;  
+}
+
+#footer .about p:last-of-type span 
+{
+     font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-white);
+margin-bottom: 0;
+border-bottom: 1px solid #20b526;
+}
+
+#footer .row
+{
+    padding: 100px 0;
+}
+
+#footer .account h4 
+{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+color: var(--gray-scale-white);
+margin-bottom: 18px;
+}
+
+#footer .account ul 
+{
+    list-style-type: none;
+    padding-left:0;
+}
+
+#footer .account ul li a 
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gren-gray-scale-400);
+text-decoration: none;
+
+}
+
+#footer .account ul li
+{
+    margin-bottom: 12px;
+}
+
+#footer .account ul li:last-of-type 
+{
+    margin-bottom: 0;
+}
+
+#footer .account ul li a:hover
+{
+    color: var(--gray-scale-white);
+}
+
+#footer .account.three, #footer .account.two
+{
+    padding-left: 15px;
+}
+
+#footer .insta h4
+{
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+color: var(--gray-scale-white);
+margin-bottom: 20px;
+}
+
+#footer .insta .img-box img 
+{
+    width: 69px;
+    height: 69px;
+    margin-bottom: 5px;
+
+}
+
+#footer .footer_two
+{
+    padding: 24px 0;
+    border-top: 1px solid #1b421d;
+}
+
+#footer .footer_two .icons span 
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    padding: 11px;
+    border-radius: 50%;
+    color: var(--gren-gray-scale-300);
+}
+
+#footer .footer_two .icons span:hover 
+{
+    background-color: var(--branding-success);
+    color: var(--gray-scale-white);
+}
+
+#footer .footer_two p 
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gren-gray-scale-500);
+margin-bottom: 0;
+}
+
+/*-------- footer css end ----------*/

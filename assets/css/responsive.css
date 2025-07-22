@@ -162,6 +162,24 @@ text-align: center;
 }
 
 
+/*-------- subscribe css start ----------*/
+#subscribe .contains p:first-of-type
+{
+   
+font-size: 20px;
+
+}
+
+#subscribe .contains_two button 
+{
+    
+padding: 16px 30px;
+font-size: 16px;
+
+}
+/*-------- subscribe css end ----------*/
+
+
 
 
 
@@ -818,6 +836,12 @@ font-size: 28px;
 /*-------- video css end ----------*/
 
 /*-------- news css start ----------*/
+#news .row 
+{
+    padding-bottom: 20px;
+}
+
+
 #news .container>h4
 {
     font-size: 30px;
@@ -827,6 +851,13 @@ font-size: 28px;
 {
     margin: 0 5px;
 }
+
+#news .card-box {
+    
+    width: calc(100% - 24px);
+    
+}
+
 /*-------- news css end ----------*/
 
 /*-------- product_desc css start ----------*/
@@ -882,7 +913,103 @@ font-size: 28px;
 }
 /*-------- product_desc css end ----------*/
 
+/*-------- subscribe css start ----------*/
+#subscribe 
+{
+    padding-top: 20px;
+    margin-top: 0;
+    border-top: none;
+    position: static;
+}
+
+#subscribe .contains_two
+{
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+#subscribe .contains
+{
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+#subscribe .contains_two input
+{
+    padding: 12px 24px;
+}
+
+#subscribe .contains_two input::placeholder
+{
+    font-size: 14px;
+}
+
+#subscribe .contains_two button
+{
+    padding: 15.4px 25px;
+    font-size: 14px;
+}
+
+#subscribe .img-box 
+{
+    text-align: center;
+}
+
+#subscribe .row 
+{
+    padding: 20px 0;
+}
+
+/*-------- subscribe css end ----------*/
+
+/*-------- footer css start ----------*/
+#footer .about 
+{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+#footer .insta 
+{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#footer .account.one
+{
+    padding-left: 20px ;
+}
+
+#footer .row 
+{
+    padding: 40px 0;
+}
+
+#footer .footer_two
+{
+    flex-direction: column;
+    padding-bottom: 70px;
+}
+
+#footer .footer_two p
+{
+    margin: 15px 0;
+}
 
 
 
+/*-------- footer css end ----------*/
+
+
+
+}
+
+@media(max-width:576px)
+{
+    #footer .account h4
+{
+    font-size: 15px;
+}
 }
