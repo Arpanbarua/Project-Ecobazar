@@ -111,6 +111,7 @@ $(function () {
 // for aos
 AOS.init();
 
+
 // for product description
  $('.slider-for').slick({
   slidesToShow: 1,
