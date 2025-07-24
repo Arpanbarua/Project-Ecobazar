@@ -1023,10 +1023,9 @@ header .second {
 /*-------- featured css end ----------*/
 
 /*-------- categories css start ----------*/
+
 #categories .buttons {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    
     text-align: center;
 }
 
@@ -2521,6 +2520,29 @@ font-size: 14px;
 line-height: 150%;
 color: var(--gren-gray-scale-500);
 margin-bottom: 0;
+}
+
+#footer 
+{
+    position: relative;
+}
+
+#footer .left 
+{
+    position: absolute;
+    left: -180px;
+    top: 59%;
+    transform: translateY(-50%);
+}
+
+#footer .right
+{
+    position: absolute;
+    right: -180px;
+    top: 59%;
+    transform: translateY(-50%);
+   
+    
 }
 
 /*-------- footer css end ----------*/

@@ -138,6 +138,8 @@ text-align: center;
 
 
 
+
+
 /*-------- ad-card css end ----------*/
 
 /*-------- product_desc css start ----------*/
@@ -159,7 +161,7 @@ text-align: center;
 
 /*-------- product_desc css end ----------*/
 
-}
+
 
 
 /*-------- subscribe css start ----------*/
@@ -179,9 +181,24 @@ font-size: 16px;
 }
 /*-------- subscribe css end ----------*/
 
+#footer .left 
+{
+    position: absolute;
+    left: -230px;
+    top: 59%;
+    transform: translateY(-50%);
+}
+
+#footer .right
+{
+    position: absolute;
+    right: -230px;
+    top: 59%;
+    transform: translateY(-50%);
+}
 
 
-
+}
 
 
 @media(max-width:992px)
@@ -998,8 +1015,22 @@ font-size: 28px;
     margin: 15px 0;
 }
 
+#footer .left 
+{
+   display: none;
+   
 
+}
+#footer .right
+{
+    display: none;
+    /* z-index: -2; */
+}
 
+#insta .img-box 
+{
+    z-index: 3;
+}
 /*-------- footer css end ----------*/
 
 
