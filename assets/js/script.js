@@ -228,18 +228,13 @@ dec.addEventListener('click', function()
 });
 
 
-
-
-
-
-
-
-
-
-
-
 //for product_desc inc & dec
 
+//for vtabs
+$('.example').vTabs({
+  'hover' : true,
+})
+//for vtabs
 
 
 });

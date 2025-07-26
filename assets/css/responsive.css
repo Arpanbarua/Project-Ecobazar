@@ -181,7 +181,7 @@ font-size: 16px;
 }
 /*-------- subscribe css end ----------*/
 
-#footer .left 
+/* #footer .left 
 {
     position: absolute;
     left: -230px;
@@ -195,7 +195,7 @@ font-size: 16px;
     right: -230px;
     top: 59%;
     transform: translateY(-50%);
-}
+} */
 
 
 }
@@ -1015,22 +1015,59 @@ font-size: 28px;
     margin: 15px 0;
 }
 
-#footer .left 
-{
-   display: none;
-   
 
-}
-#footer .right
-{
-    display: none;
-    /* z-index: -2; */
-}
 
-#insta .img-box 
+
+#footer .insta, #footer .row .account
 {
     z-index: 3;
 }
+ #footer .footer_two p
+ {
+    z-index: 3;
+ }
+
+#footer .row .account h4 
+{
+    text-align: center;
+}
+
+#footer .row .account.one ul
+{
+    display: flex;
+    justify-content: center;
+}
+
+#footer .row .account.one ul li 
+{
+    margin: 0 10px;
+}
+
+
+#footer .row .account.two ul
+{
+    display: flex;
+    justify-content: center;
+}
+
+#footer .row .account.two ul li 
+{
+    margin: 0 10px;
+}
+
+#footer .row .account.three ul
+{
+    display: flex;
+    justify-content: center;
+}
+
+#footer .row .account.three ul li 
+{
+    margin: 0 10px;
+}
+
+
+
 /*-------- footer css end ----------*/
 
 
@@ -1042,5 +1079,28 @@ font-size: 28px;
     #footer .account h4
 {
     font-size: 15px;
+    margin-bottom: 10px;
 }
+
+#footer .row .account.one ul li, #footer .row .account.two ul li, #footer .row .account.three ul li 
+{
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+#footer .account ul li a
+{
+    font-size: 11.5px;
+}
+
+/* #footer .row .account.one ul
+{
+    justify-content: left;
+} */
+
+#footer .about p:first-of-type 
+{
+    font-size: 14px;
+}
+
 }
