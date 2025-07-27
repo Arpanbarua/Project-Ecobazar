@@ -902,14 +902,14 @@ color: var(--gray-scale-gray--900);
     padding: 48px 0;
     font-family: var(--font-family);
 font-weight: 400;
-font-size: 16px;
+font-size: 14px;
 line-height: 150%;
 color: var(--gray-scale-gray--400);
 display: inline-flex;
 align-items: center;
 }
 
-#heading_four p span 
+#heading_four p span:first-of-type
 {
     display: inline-flex;
     line-height: 0;
@@ -921,6 +921,7 @@ align-items: center;
 #heading_four .cabbage 
 {
     color: var(--branding-success);
+    display: inline-block;
 }
 /*-------- heading_four css end ----------*/
 
@@ -928,7 +929,7 @@ align-items: center;
 /*-------- footer css start ----------*/
 #footer 
 {
-    background: var(--gren-gray-scale-900);
+    background: var(--gray-scale-gray--900);
     padding-bottom: 20px;
 }
 
@@ -1131,13 +1132,14 @@ font-size: 16px;
 line-height: 150%;
 color: var(--gray-scale-gray--500);
 padding: 16px;
+cursor: pointer;
 }
 
 #desc_tab .vtabs-toggles .vtab-toggle.active 
 {
     font-family: var(--font-family);
 font-weight: 500;
-font-size: 16px;
+
 line-height: 150%;
 color: var(--gray-scale-gray--900);
 position: relative;
@@ -1158,13 +1160,235 @@ position: relative;
 
 #desc_tab .vtabs-content .contains p
 {
-    margin-bottom: 0;
-    text-align: justify;
+    
+    /* text-align: justify; */
     font-family: var(--font-family);
 font-weight: 400;
 font-size: 14px;
 line-height: 150%;
 color: var(--gray-scale-gray--500);
+margin-bottom: 20px;
+}
+
+#desc_tab .vtabs-content .contains ul 
+{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+#desc_tab .vtabs-content .contains ul li span 
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    color: var(--branding-success);
+    margin-right: 8px;
+}
+
+#desc_tab .vtabs-content .contains ul li
+{
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+color: var(--gray-scale-gray--500);
+margin-bottom: 14px;
+}
+
+#desc_tab .img-box .contains
+{
+    padding: 24px 20px;
+    border: 1px solid var(--gray-scale-gray--100);
+    border-radius: 6px;
+}
+
+#desc_tab .img-box .contains .box .text h5
+{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray--900);
+margin-bottom: 6px;
+}
+
+#desc_tab .img-box .contains .box .text p
+{
+   font-family: var(--font-family);
+font-weight: 400;
+font-size: 13px;
+line-height: 150%;
+color: var(--gray-scale-gray--500);
+margin-bottom: 0;
+}
+
+#desc_tab .img-box .contains .box .text
+{
+    margin-left: 12px;
+}
+
+#desc_tab .img-box .contains .box span 
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    color: var(--branding-success);
+}
+
+#desc_tab .img-box .contains .box:last-of-type
+{
+    margin-left: 22px;
+}
+
+#desc_tab .img-box .contains
+{
+    width: 84%;
+    
+    margin: 20px 0;
+}
+
+#desc_tab .two .contains .details 
+{
+    margin-bottom: 12px;
+}
+
+#desc_tab .two .contains  .tname p
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray--900);
+margin-bottom: 0;
+}
+
+#desc_tab .two .contains  .tdesc p
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray--600);
+margin-bottom: 0;
+}
+
+#desc_tab .two .contains .tdesc  .num
+{
+    color: var(--gray-scale-gray--400);
+}
+
+#desc_tab .two .contains .tdesc p a 
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray--500);
+text-decoration: none;
+}
+
+#desc_tab .two .contains p a:hover 
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray--900);
+text-decoration: underline;
+}
+
+#desc_tab .three .contains .comments p 
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+text-align: right;
+color: var(--gray-scale-gray--400);
+}
+
+
+#desc_tab .three .contains .comments .details .text
+{
+    margin-left: 12px;
+}
+
+#desc_tab .three .contains .comments .details .text h5 
+{
+    margin-bottom: 2px;
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray--900);
+}
+
+#desc_tab .three .contains .comments .details .text .icons span
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    color: var(--branding-warning);
+}
+
+#desc_tab .three .contains .comments .details .text .icons .ash 
+{
+    color: var(--gray-scale-gray--200);
+}
+
+#desc_tab .three .feed>p
+{
+    margin: 12px 0 20px 0;
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray--500);
+}
+
+#desc_tab .three .feed
+{
+    border-bottom: 1px solid var(--gray-scale-gray--100);
+    margin-top: 20px;
+}
+
+#desc_tab .three .feed:last-of-type 
+{
+    border-bottom: none;
+}
+
+#desc_tab .three a 
+{
+    background: rgba(86, 172, 89, 0.1);
+    border-radius: 43px;
+padding: 14px 32px;
+text-decoration: none;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+line-height: 120%;
+color: var(--branding-success);
+display: inline-block;
+margin-top: 20px;
+}
+
+#desc_tab .three a:hover 
+{
+    background: #fff;
+    outline: 2px solid var(--branding-success);
+}
+
+
+#desc_tab .vtab-content 
+{
+    padding-bottom: 40px;
+    padding-left: 5px;
 }
 
 

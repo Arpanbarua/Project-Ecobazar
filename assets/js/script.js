@@ -232,7 +232,7 @@ dec.addEventListener('click', function()
 
 //for vtabs
 $('.example').vTabs({
-  'hover' : true,
+  // 'hover' : true,
 })
 //for vtabs
 
