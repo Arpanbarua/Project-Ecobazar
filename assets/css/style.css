@@ -51,7 +51,11 @@ body.no-scroll {
     height: 100vh;
 }
 
-
+a 
+{
+    text-decoration: none;
+    
+}
 
 
 /*-------- header  css start ----------*/
@@ -2408,7 +2412,7 @@ margin-bottom: 0;
 border: none;  
 }
 
-#footer .about p:last-of-type span 
+#footer .about p:last-of-type a
 {
      font-family: var(--font-family);
 font-weight: 500;
@@ -2417,6 +2421,7 @@ line-height: 150%;
 color: var(--gray-scale-white);
 margin-bottom: 0;
 border-bottom: 1px solid #20b526;
+text-decoration: none;
 }
 
 #footer .row
