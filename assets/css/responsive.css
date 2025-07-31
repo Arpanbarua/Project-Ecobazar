@@ -1089,9 +1089,57 @@ header .contains
 
     /*-------- desc_tab css end ----------*/
 
+    /* -----------------------------------------------  vegetable.html ------------------------------------------------------------------------*/
+    /*-------- featured css start ----------*/
+    #filtered .product_child {
+
+        width: calc(100% - 24px);
+        margin-right: 12px;
+    }
+
+    #filtered .cat-buttons.all ul
+    {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
+
+    #filtered .cat-buttons.all ul li 
+    {
+        margin: 5px 10px;
+    }
+
+    .price-filter-range {
+    width: 70%;
+    height: 6px;
+    
+}
+
+    /*-------- featured css end ----------*/
 
 
 
+
+
+
+
+
+
+
+
+    /* -----------------------------------------------  vegetable.html ------------------------------------------------------------------------*/
+
+
+
+}
+
+@media(max-width:992px) and (min-width:769px)
+{
+     #filtered .product_child {
+
+        width: calc(50% - 24px);
+        margin-right: 12px;
+    }
 }
 
 @media(max-width:768px) and (min-width:577px) {
@@ -1127,11 +1175,19 @@ header .contains
         margin-bottom: 20px;
     }
 
-    #desc_tab .vtabs-content .contains ul li
-    {
+    #desc_tab .vtabs-content .contains ul li {
         font-size: 14px;
     }
+
     /*-------- desc_tab css end ----------*/
+
+    /*------------------------------------------------------- vegetable.html ------------------------------------------------*/
+     #filtered .product_child {
+
+        width: calc(50% - 24px);
+        margin-right: 12px;
+    }
+
 
 }
 
