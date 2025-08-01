@@ -503,7 +503,7 @@
     <section id="filtered" class="mt-4">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-xl-3 col-lg-4">
+                <div class="col-xl-4 col-lg-4 first">
                     <button type="submit" class="filterbtn">Filter &nbsp;<span><iconify-icon
                                 icon="lets-icons:filter-big" width="24" height="24"></iconify-icon></span></button>
 
@@ -594,14 +594,14 @@
                                     <div class="accordion-body">
 
                                         <div id="slider-range" class="price-filter-range" name="rangeInput">
-                                           
+
                                         </div>
                                         <div class="d-flex price-show align-items-center">
                                             <span>Price: &nbsp;</span>
-                                         <input type="number" min=0 max="9900" oninput="validity.valid||(value='0');"
+                                            <input type="number" min=0 max="9900" oninput="validity.valid||(value='0');"
                                                 id="min_price" class="price-range-field" />
-                                                <!-- 10,000 -->
-                                            <span>-</span>
+                                            <!-- 10,000 -->
+                                            <span>- &nbsp;&nbsp;</span>
                                             <input type="number" min=0 max="10000"
                                                 oninput="validity.valid||(value='10000');" id="max_price"
                                                 class="price-range-field" />
@@ -617,13 +617,14 @@
                     </div>
 
                     <!-- rating -->
-                     <div class="cat-buttons rating">
+                    <div class="cat-buttons rating">
                         <!-- <h4>All Categories</h4> -->
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button d-flex justify-content-between align-items-center "
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
                                         <h4 class="mb-0">Rating</h4>
                                         <span><iconify-icon icon="ep:arrow-down" width="24"
                                                 height="24"></iconify-icon></span>
@@ -640,23 +641,33 @@
                                             <li><input type="checkbox" class="category-button" data-filter="type-1"
                                                     name="filtering" id="type1">
                                                 <label for="type1">
-                                                    <span><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    &nbsp;&nbsp;5.0 
+                                                    <span><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    &nbsp;&nbsp;5.0
                                                 </label>
                                             </li>
                                             <!-- 2 -->
                                             <li><input type="checkbox" class="category-button" data-filter="type-2"
                                                     name="filtering" id="type2">
                                                 <label for="type2">
-                                                     <span><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
+                                                    <span><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
                                                     &nbsp;&nbsp;4.0 and up
                                                 </label>
                                             </li>
@@ -664,11 +675,16 @@
                                             <li><input type="checkbox" class="category-button" data-filter="type-3"
                                                     name="filtering" id="type3">
                                                 <label for="type3">
-                                                     <span><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
+                                                    <span><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
                                                     &nbsp;&nbsp;3.0 and up
                                                 </label>
                                             </li>
@@ -676,11 +692,16 @@
                                             <li><input type="checkbox" class="category-button" data-filter="type-4"
                                                     name="filtering" id="type4">
                                                 <label for="type4">
-                                                     <span><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
+                                                    <span><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
                                                     &nbsp;&nbsp;2.0 and up
                                                 </label>
                                             </li>
@@ -688,14 +709,19 @@
                                             <li><input type="checkbox" class="category-button" data-filter="type-5"
                                                     name="filtering" id="type5">
                                                 <label for="type5">
-                                                    <span><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
-                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20" height="20"></iconify-icon></span>
+                                                    <span><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
+                                                    <span class="ash"><iconify-icon icon="si:star-fill" width="20"
+                                                            height="20"></iconify-icon></span>
                                                     &nbsp;&nbsp;1.0 and up
                                                 </label>
-                                            </li> 
+                                            </li>
                                             <!-- 6 -->
                                             <!-- <li><input type="radio" class="category-button" data-filter="cat-6"
                                                     name="filtering" id="cat6">
@@ -726,7 +752,8 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button d-flex justify-content-between align-items-center "
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">
                                         <h4 class="mb-0">Popular Tag</h4>
                                         <span><iconify-icon icon="ep:arrow-down" width="24"
                                                 height="24"></iconify-icon></span>
@@ -736,19 +763,19 @@
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
 
-                                       <span class="category-button" data-filter="tag-1">Healthy</span>
-                                       <span class="category-button" data-filter="tag-2">Low Fat</span>
-                                       <span class="category-button" data-filter="tag-3">Vegetarian</span>
-                                       <span class="category-button" data-filter="tag-4">Kid foods</span>
-                                       <span class="category-button" data-filter="tag-5">Vitamins</span>
-                                       <span class="category-button" data-filter="tag-6">Bread</span>
-                                       <span class="category-button" data-filter="tag-7">Meat</span>
-                                       <span class="category-button" data-filter="tag-8">Snacks</span>
-                                       <span class="category-button" data-filter="tag-9">Tiffin</span>
-                                       <span class="category-button" data-filter="tag-10">Lunch</span>
-                                       <span class="category-button" data-filter="tag-11">Dinner</span>
-                                       <span class="category-button" data-filter="tag-12">Breakfast</span>
-                                       <span class="category-button" data-filter="tag-13">Fruit</span>
+                                        <span class="category-button" data-filter="tag-1">Healthy</span>
+                                        <span class="category-button" data-filter="tag-2">Low Fat</span>
+                                        <span class="category-button" data-filter="tag-3">Vegetarian</span>
+                                        <span class="category-button" data-filter="tag-4">Kid foods</span>
+                                        <span class="category-button" data-filter="tag-5">Vitamins</span>
+                                        <span class="category-button" data-filter="tag-6">Bread</span>
+                                        <span class="category-button" data-filter="tag-7">Meat</span>
+                                        <span class="category-button" data-filter="tag-8">Snacks</span>
+                                        <span class="category-button" data-filter="tag-9">Tiffin</span>
+                                        <span class="category-button" data-filter="tag-10">Lunch</span>
+                                        <span class="category-button" data-filter="tag-11">Dinner</span>
+                                        <span class="category-button" data-filter="tag-12">Breakfast</span>
+                                        <span class="category-button" data-filter="tag-13">Fruit</span>
 
                                     </div>
                                 </div>
@@ -766,614 +793,689 @@
                         <div class="contains">
                             <h5>79%<span> Discount</span></h5>
                             <p>on your first order</p>
-                            <a href="#">Shop Now <span><iconify-icon icon="bitcoin-icons:arrow-right-filled" width="24" height="24"></iconify-icon></span></a>
+                            <a href="#">Shop Now <span><iconify-icon icon="bitcoin-icons:arrow-right-filled" width="24"
+                                        height="24"></iconify-icon></span></a>
                         </div>
                     </div>
 
-
-
-                </div>
-
-                <div class="col-xl-9 col-lg-8">
-                    <!-- <div class="fields">
-                        <div class="filter cat-1">
-                            <img src="1.jpg">
-                        </div>
-
-                        <div class="filter cat-2">
-                            <img src="2.jpg">
-                        </div>
-
-                        <div class="filter cat-1">
-                            <img src="3.jpg">
-                        </div>
-
-                        <div class="filter cat-2">
-                            <img src="4.jpg">
-                        </div>
-                        <div class="filter cat-3">
-                            <img src="4.jpg">
-                        </div>
-                        <div class="filter cat-4">
-                            <img src="4.jpg">
-                        </div>
-
-                        <div class="filter cat-5">
-                            <img src="4.jpg">
-                        </div>
-                        <div class="filter cat-6">
-                            <img src="4.jpg">
-                            <img src="4.jpg">
-                        </div>
-                        <div class="filter cat-7">
-                            <img src="4.jpg">
-                            <img src="4.jpg">
-                        </div>
-
-
-
-                    </div> -->
-
-                <div class="row">
-                
-                <!-- test -->
-                <!-- vegetables -->
-
-                 <div class="product_child col-xl-4 col-lg-4 col-md-4  filter cat-2 type-2 tag-1 tag-2 tag-3 tag-5">
-                    <div class="img-box">
-                        <img src="../images/categories/Vegetables/tomato.png" alt="product4" class="img-fluid">
-
-                        <div class="preview_icons">
-                            <ul>
-                                <li>
-                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
-                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
-                                                height="24"></iconify-icon></span></a>
-
-                                </li>
-                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
-                                                icon="solar:eye-linear" width="24"
-                                                height="24"></iconify-icon></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex box align-items-center justify-content-between">
-                        <div class="contains">
-                            <h4>Red Tomatoes</h4>
-                            <b>$14.99</b>
-
-
-                            <div class="icons">
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9734;</span>
+                    <div class="sale">
+                        <h5>Sale Products</h5>
+                        <!-- 1 -->
+                        <div class="box d-flex align-items-center">
+                            <img src="../images/categories/Vegetables/red capsicum.png" alt="red capsicum">
+                            <div class="txt-box">
+                                <p>Red Capsicum</p>
+                                <span class="price">$32.00</span>
+                                <del>$20.99</del>
+                                <div class="icons">
+                                    <span><iconify-icon icon="si:star-fill" width="12"
+                                            height="12"></iconify-icon></span>
+                                    <span><iconify-icon icon="si:star-fill" width="12"
+                                            height="12"></iconify-icon></span>
+                                    <span><iconify-icon icon="si:star-fill" width="12"
+                                            height="12"></iconify-icon></span>
+                                    <span><iconify-icon icon="si:star-fill" width="12"
+                                            height="12"></iconify-icon></span>
+                                    <span class="ash"><iconify-icon icon="si:star-fill" width="12"
+                                            height="12"></iconify-icon></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="cart">
-                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
-                                    height="24"></iconify-icon></span>
-                        </div>
-                    </div>
-                </div>
 
-
-                <div class="product_child col-xl-4 col-lg-4  col-md-4  filter cat-2 type-2 tag-1  tag-3 tag-5">
-                    <div class="img-box">
-                        <img src="../images/categories/Vegetables/cauliflower.png" alt="cauliflower"
-                            class="img-fluid">
-
-                        <div class="preview_icons">
-                            <ul>
-                                <li>
-                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
-                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
-                                                height="24"></iconify-icon></span></a>
-
-                                </li>
-                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
-                                                icon="solar:eye-linear" width="24"
-                                                height="24"></iconify-icon></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex box align-items-center justify-content-between">
-                        <div class="contains">
-                            <h4>Fresh Cauliflower</h4>
-                            <b>$14.99</b>
-
-
-                            <div class="icons">
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9734;</span>
+                        <!-- 2 -->
+                        <div class="box d-flex align-items-center">
+                            <img src="../images/categories/Vegetables/Cabbage.png" alt="cabbage">
+                            <div class="txt-box">
+                                <p>Green Cabbage</p>
+                                <span class="price">$24.00</span>
+                                <del>$20.99</del>
+                                <div class="icons">
+                                    <span><iconify-icon icon="si:star-fill" width="12"
+                                            height="12"></iconify-icon></span>
+                                    <span><iconify-icon icon="si:star-fill" width="12"
+                                            height="12"></iconify-icon></span>
+                                    <span><iconify-icon icon="si:star-fill" width="12"
+                                            height="12"></iconify-icon></span>
+                                    <span><iconify-icon icon="si:star-fill" width="12"
+                                            height="12"></iconify-icon></span>
+                                    <span class="ash"><iconify-icon icon="si:star-fill" width="12"
+                                            height="12"></iconify-icon></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="cart">
-                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
-                                    height="24"></iconify-icon></span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="product_child   col-xl-4 col-lg-4 col-sm-4  filter cat-2 type-2 tag-1 tag-2 tag-3 tag-5">
-                    <div class="img-box">
-                        <img src="../images/categories/Vegetables/Lettuce.png" alt="Lettuce" class="img-fluid">
-
-                        <div class="preview_icons">
-                            <ul>
-                                <li>
-                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
-                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
-                                                height="24"></iconify-icon></span></a>
-
-                                </li>
-                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
-                                                icon="solar:eye-linear" width="24"
-                                                height="24"></iconify-icon></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex box align-items-center justify-content-between">
-                        <div class="contains">
-                            <h4>Green Lettuce</h4>
-                            <b>$14.99</b>
-
-
-                            <div class="icons">
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9734;</span>
+                        <!-- 3 -->
+                        <div class="box d-flex align-items-center">
+                            <img src="../images/categories/Vegetables/capsicum.png" alt="capsicum">
+                            <div class="txt-box">
+                                <p>Green Capsicum</p>
+                                <span class="price">$32.00</span>
+                                <del>$20.99</del>
+                                <div class="icons">
+                                    <span><iconify-icon icon="si:star-fill" width="12"
+                                            height="12"></iconify-icon></span>
+                                    <span><iconify-icon icon="si:star-fill" width="12"
+                                            height="12"></iconify-icon></span>
+                                    <span><iconify-icon icon="si:star-fill" width="12"
+                                            height="12"></iconify-icon></span>
+                                    <span><iconify-icon icon="si:star-fill" width="12"
+                                            height="12"></iconify-icon></span>
+                                    <span class="ash"><iconify-icon icon="si:star-fill" width="12"
+                                            height="12"></iconify-icon></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="cart">
-                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
-                                    height="24"></iconify-icon></span>
-                        </div>
+
                     </div>
+
+
+
                 </div>
 
-                <div class="product_child  col-xl-3 col-lg-4  col-sm-4  filter cat-2 type-2 tag-1 tag-2 tag-3 tag-5">
-                    <div class="img-box">
-                        <img src="../images/categories/Vegetables/capsicum.png" alt="capsicum" class="img-fluid">
+                <div class="col-xl-8 col-lg-8 second">
 
-                        <div class="preview_icons">
-                            <ul>
-                                <li>
-                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
-                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
-                                                height="24"></iconify-icon></span></a>
+                    <div class="contains d-flex align-items-center justify-content-between">
+                        <div class="d-flex sorting align-items-center">
+                            <p class="mb-0">Sort By: </p>
+                            <select name="" id="">
+                                <option value="">Latest</option>
+                                <option value="">Last 24 hours</option>
+                                <option value="">Last 7 days</option>
 
-                                </li>
-                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
-                                                icon="solar:eye-linear" width="24"
-                                                height="24"></iconify-icon></span></a></li>
-                            </ul>
+                            </select>
                         </div>
+                        <p class="mb-0">52 <span>results found</span></p>
                     </div>
-                    <div class="d-flex box align-items-center justify-content-between">
-                        <div class="contains">
-                            <h4>Capsicum</h4>
-                            <b>$14.99</b>
 
 
-                            <div class="icons">
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9734;</span>
+                    <div class="row">
+
+                        <!-- test -->
+                        <!-- vegetables -->
+
+                        <div
+                            class="product_child col-xl-4 col-lg-4 col-md-4  filter cat-2 type-2 tag-1 tag-2 tag-3 tag-5">
+                            <div class="img-box">
+                                <img src="../images/categories/Vegetables/tomato.png" alt="product4" class="img-fluid">
+
+                                <div class="preview_icons">
+                                    <ul>
+                                        <li>
+                                            <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                                href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                        height="24"></iconify-icon></span></a>
+
+                                        </li>
+                                        <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="See More"
+                                                href="#"><span><iconify-icon icon="solar:eye-linear" width="24"
+                                                        height="24"></iconify-icon></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex box align-items-center justify-content-between">
+                                <div class="contains">
+                                    <h4>Red Tomatoes</h4>
+                                    <b>$14.99</b>
+
+
+                                    <div class="icons">
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9734;</span>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                            height="24"></iconify-icon></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="cart">
-                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
-                                    height="24"></iconify-icon></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product_child  col-xl-3 col-lg-4  col-sm-4  filter cat-2 type-2">
-                    <div class="img-box">
-                        <img src="../images/categories/Vegetables/chilli.png" alt="chilli" class="img-fluid">
-
-                        <div class="preview_icons">
-                            <ul>
-                                <li>
-                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
-                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
-                                                height="24"></iconify-icon></span></a>
-
-                                </li>
-                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
-                                                icon="solar:eye-linear" width="24"
-                                                height="24"></iconify-icon></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex box align-items-center justify-content-between">
-                        <div class="contains">
-                            <h4>Green Chilli</h4>
-                            <b>$14.99</b>
 
 
-                            <div class="icons">
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9734;</span>
+                        <div class="product_child col-xl-4 col-lg-4  col-md-4  filter cat-2 type-2 tag-1  tag-3 tag-5">
+                            <div class="img-box">
+                                <img src="../images/categories/Vegetables/cauliflower.png" alt="cauliflower"
+                                    class="img-fluid">
+
+                                <div class="preview_icons">
+                                    <ul>
+                                        <li>
+                                            <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                                href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                        height="24"></iconify-icon></span></a>
+
+                                        </li>
+                                        <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="See More"
+                                                href="#"><span><iconify-icon icon="solar:eye-linear" width="24"
+                                                        height="24"></iconify-icon></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex box align-items-center justify-content-between">
+                                <div class="contains">
+                                    <h4>Fresh Cauliflower</h4>
+                                    <b>$14.99</b>
+
+
+                                    <div class="icons">
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9734;</span>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                            height="24"></iconify-icon></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="cart">
-                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
-                                    height="24"></iconify-icon></span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-2 type-2">
-                    <div class="img-box">
-                        <img src="../images/categories/Vegetables/Eggplant.png" alt="Eggplant" class="img-fluid">
+                        <div
+                            class="product_child   col-xl-4 col-lg-4 col-sm-4  filter cat-2 type-2 tag-1 tag-2 tag-3 tag-5">
+                            <div class="img-box">
+                                <img src="../images/categories/Vegetables/Lettuce.png" alt="Lettuce" class="img-fluid">
 
-                        <div class="preview_icons">
-                            <ul>
-                                <li>
-                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
-                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
-                                                height="24"></iconify-icon></span></a>
+                                <div class="preview_icons">
+                                    <ul>
+                                        <li>
+                                            <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                                href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                        height="24"></iconify-icon></span></a>
 
-                                </li>
-                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
-                                                icon="solar:eye-linear" width="24"
-                                                height="24"></iconify-icon></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex box align-items-center justify-content-between">
-                        <div class="contains">
-                            <h4>Eggplant</h4>
-                            <b>$34.00</b>
+                                        </li>
+                                        <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="See More"
+                                                href="#"><span><iconify-icon icon="solar:eye-linear" width="24"
+                                                        height="24"></iconify-icon></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex box align-items-center justify-content-between">
+                                <div class="contains">
+                                    <h4>Green Lettuce</h4>
+                                    <b>$14.99</b>
 
 
-                            <div class="icons">
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9734;</span>
+                                    <div class="icons">
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9734;</span>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                            height="24"></iconify-icon></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="cart">
-                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
-                                    height="24"></iconify-icon></span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-2 type-2">
-                    <div class="img-box">
-                        <a href="./assets/html/product.html"><img src="../images/categories/Vegetables/Cabbage.png" alt="Cabbage" class="img-fluid"></a>
+                        <div
+                            class="product_child  col-xl-3 col-lg-4  col-sm-4  filter cat-2 type-2 tag-1 tag-2 tag-3 tag-5">
+                            <div class="img-box">
+                                <img src="../images/categories/Vegetables/capsicum.png" alt="capsicum"
+                                    class="img-fluid">
 
-                        <div class="preview_icons">
-                            <ul>
-                                <li>
-                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
-                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
-                                                height="24"></iconify-icon></span></a>
+                                <div class="preview_icons">
+                                    <ul>
+                                        <li>
+                                            <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                                href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                        height="24"></iconify-icon></span></a>
 
-                                </li>
-                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
-                                                icon="solar:eye-linear" width="24"
-                                                height="24"></iconify-icon></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex box align-items-center justify-content-between">
-                        <div class="contains">
-                           <a href="./assets/html/product.html" style="text-decoration: none;"> <h4>Chinese Cabbage</h4></a>
-                            <b>$12.00</b>
+                                        </li>
+                                        <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="See More"
+                                                href="#"><span><iconify-icon icon="solar:eye-linear" width="24"
+                                                        height="24"></iconify-icon></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex box align-items-center justify-content-between">
+                                <div class="contains">
+                                    <h4>Capsicum</h4>
+                                    <b>$14.99</b>
 
 
-                            <div class="icons">
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9734;</span>
+                                    <div class="icons">
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9734;</span>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                            height="24"></iconify-icon></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="cart">
-                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
-                                    height="24"></iconify-icon></span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-2 type-2">
-                    <div class="img-box">
-                        <img src="../images/categories/Vegetables/cucumber.png" alt="product1" class="img-fluid">
-                        <p>Sale <span>50%</span></p>
-                        <div class="preview_icons d-flex">
-                            <ul>
-                                <li>
-                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
-                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
-                                                height="24"></iconify-icon></span></a>
+                        <div class="product_child  col-xl-3 col-lg-4  col-sm-4  filter cat-2 type-2">
+                            <div class="img-box">
+                                <img src="../images/categories/Vegetables/chilli.png" alt="chilli" class="img-fluid">
 
-                                </li>
-                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
-                                                icon="solar:eye-linear" width="24"
-                                                height="24"></iconify-icon></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex box align-items-center justify-content-between">
-                        <div class="contains">
-                            <h4>Green Cucumber</h4>
-                            <b>$14.99</b>
-                            <del>$20.99</del>
+                                <div class="preview_icons">
+                                    <ul>
+                                        <li>
+                                            <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                                href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                        height="24"></iconify-icon></span></a>
 
-                            <div class="icons">
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9734;</span>
+                                        </li>
+                                        <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="See More"
+                                                href="#"><span><iconify-icon icon="solar:eye-linear" width="24"
+                                                        height="24"></iconify-icon></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex box align-items-center justify-content-between">
+                                <div class="contains">
+                                    <h4>Green Chilli</h4>
+                                    <b>$14.99</b>
+
+
+                                    <div class="icons">
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9734;</span>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                            height="24"></iconify-icon></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="cart">
-                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
-                                    height="24"></iconify-icon></span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="product_child cucumber col-xl-3 col-lg-4 col-sm-4  filter cat-2 type-2">
-                    <div class="img-box">
-                        <img src="../images/categories/Vegetables/corn.png" alt="product1" class="img-fluid">
-                        <!-- <p>Sale <span>50%</span></p> -->
-                        <p>Out of Stock</p>
-                        <div class="preview_icons d-flex">
-                            <ul>
-                                <li>
-                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
-                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
-                                                height="24"></iconify-icon></span></a>
+                        <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-2 type-2">
+                            <div class="img-box">
+                                <img src="../images/categories/Vegetables/Eggplant.png" alt="Eggplant"
+                                    class="img-fluid">
 
-                                </li>
-                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
-                                                icon="solar:eye-linear" width="24"
-                                                height="24"></iconify-icon></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex box align-items-center justify-content-between">
-                        <div class="contains">
-                            <h4>Fresh Corn</h4>
-                            <b>$14.99</b>
-                            <del>$20.99</del>
+                                <div class="preview_icons">
+                                    <ul>
+                                        <li>
+                                            <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                                href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                        height="24"></iconify-icon></span></a>
 
-                            <div class="icons">
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9734;</span>
+                                        </li>
+                                        <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="See More"
+                                                href="#"><span><iconify-icon icon="solar:eye-linear" width="24"
+                                                        height="24"></iconify-icon></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex box align-items-center justify-content-between">
+                                <div class="contains">
+                                    <h4>Eggplant</h4>
+                                    <b>$34.00</b>
+
+
+                                    <div class="icons">
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9734;</span>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                            height="24"></iconify-icon></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="cart">
-                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
-                                    height="24"></iconify-icon></span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- test -->
-                 <div class="product_child cucumber col-xl-3 col-lg-4 col-sm-4  filter cat-2 type-3">
-                    <div class="img-box">
-                        <img src="../images/categories/Vegetables/chilli.png" alt="product1" class="img-fluid">
-                        <!-- <p>Sale <span>50%</span></p> -->
-                        <!-- <p>Out of Stock</p> -->
-                        <div class="preview_icons d-flex">
-                            <ul>
-                                <li>
-                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
-                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
-                                                height="24"></iconify-icon></span></a>
+                        <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-2 type-2">
+                            <div class="img-box">
+                                <a href="./product.html"><img
+                                        src="../images/categories/Vegetables/Cabbage.png" alt="Cabbage"
+                                        class="img-fluid"></a>
 
-                                </li>
-                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
-                                                icon="solar:eye-linear" width="24"
-                                                height="24"></iconify-icon></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex box align-items-center justify-content-between">
-                        <div class="contains">
-                            <h4>Green Chilli</h4>
-                            <b>$14.99</b>
-                            <del>$20.99</del>
+                                <div class="preview_icons">
+                                    <ul>
+                                        <li>
+                                            <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                                href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                        height="24"></iconify-icon></span></a>
 
-                            <div class="icons">
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span class="ash">&#9734;</span>
-                                <span class="ash">&#9734;</span>
+                                        </li>
+                                        <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="See More"
+                                                href="#"><span><iconify-icon icon="solar:eye-linear" width="24"
+                                                        height="24"></iconify-icon></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex box align-items-center justify-content-between">
+                                <div class="contains">
+                                    <a href="./product.html" style="text-decoration: none;">
+                                        <h4>Chinese Cabbage</h4>
+                                    </a>
+                                    <b>$12.00</b>
+
+
+                                    <div class="icons">
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9734;</span>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                            height="24"></iconify-icon></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="cart">
-                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
-                                    height="24"></iconify-icon></span>
-                        </div>
-                    </div>
-                </div>
-                <!-- test -->
 
-                <!-- vegetables -->
+                        <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-2 type-2">
+                            <div class="img-box">
+                                <img src="../images/categories/Vegetables/cucumber.png" alt="product1"
+                                    class="img-fluid">
+                                <p>Sale <span>50%</span></p>
+                                <div class="preview_icons d-flex">
+                                    <ul>
+                                        <li>
+                                            <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                                href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                        height="24"></iconify-icon></span></a>
 
-                <!-- fruits -->
-                 <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-1 type-2 tag-1 tag-2 tag-3 tag-5 tag-13">
-                    <div class="img-box">
-                        <img src="../images/categories/Fruit/Product1.png" alt="product1" class="img-fluid">
-                        <p>Sale <span>50%</span></p>
-                        <div class="preview_icons d-flex">
-                            <ul>
-                                <li>
-                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
-                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
-                                                height="24"></iconify-icon></span></a>
+                                        </li>
+                                        <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="See More"
+                                                href="#"><span><iconify-icon icon="solar:eye-linear" width="24"
+                                                        height="24"></iconify-icon></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex box align-items-center justify-content-between">
+                                <div class="contains">
+                                    <h4>Green Cucumber</h4>
+                                    <b>$14.99</b>
+                                    <del>$20.99</del>
 
-                                </li>
-                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
-                                                icon="solar:eye-linear" width="24"
-                                                height="24"></iconify-icon></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex box align-items-center justify-content-between">
-                        <div class="contains">
-                            <h4>Green Apple</h4>
-                            <b>$14.99</b>
-                            <del>$20.99</del>
-
-                            <div class="icons">
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9734;</span>
+                                    <div class="icons">
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9734;</span>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                            height="24"></iconify-icon></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="cart">
-                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
-                                    height="24"></iconify-icon></span>
-                        </div>
-                    </div>
-                </div>
 
+                        <div class="product_child cucumber col-xl-3 col-lg-4 col-sm-4  filter cat-2 type-2">
+                            <div class="img-box">
+                                <img src="../images/categories/Vegetables/corn.png" alt="product1" class="img-fluid">
+                                <!-- <p>Sale <span>50%</span></p> -->
+                                <p>Out of Stock</p>
+                                <div class="preview_icons d-flex">
+                                    <ul>
+                                        <li>
+                                            <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                                href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                        height="24"></iconify-icon></span></a>
 
-                <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-1 type-2 tag-13">
-                    <div class="img-box">
-                        <img src="../images/categories/Fruit/malta.png" alt="malta" class="img-fluid">
+                                        </li>
+                                        <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="See More"
+                                                href="#"><span><iconify-icon icon="solar:eye-linear" width="24"
+                                                        height="24"></iconify-icon></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex box align-items-center justify-content-between">
+                                <div class="contains">
+                                    <h4>Fresh Corn</h4>
+                                    <b>$14.99</b>
+                                    <del>$20.99</del>
 
-                        <div class="preview_icons d-flex">
-                            <ul>
-                                <li>
-                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
-                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
-                                                height="24"></iconify-icon></span></a>
-
-                                </li>
-                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
-                                                icon="solar:eye-linear" width="24"
-                                                height="24"></iconify-icon></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex box align-items-center justify-content-between">
-                        <div class="contains">
-                            <h4>Fresh Indian Malta</h4>
-                            <b>$20.00</b>
-
-
-                            <div class="icons">
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9734;</span>
+                                    <div class="icons">
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9734;</span>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                            height="24"></iconify-icon></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="cart">
-                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
-                                    height="24"></iconify-icon></span>
-                        </div>
-                    </div>
-                </div>
 
+                        <!-- test -->
+                        <div class="product_child cucumber col-xl-3 col-lg-4 col-sm-4  filter cat-2 type-3">
+                            <div class="img-box">
+                                <img src="../images/categories/Vegetables/chilli.png" alt="product1" class="img-fluid">
+                                <!-- <p>Sale <span>50%</span></p> -->
+                                <!-- <p>Out of Stock</p> -->
+                                <div class="preview_icons d-flex">
+                                    <ul>
+                                        <li>
+                                            <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                                href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                        height="24"></iconify-icon></span></a>
 
-                <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-1 type-2 tag-13">
-                    <div class="img-box">
-                        <img src="../images/categories/Fruit/mango.png" alt="mango" class="img-fluid">
+                                        </li>
+                                        <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="See More"
+                                                href="#"><span><iconify-icon icon="solar:eye-linear" width="24"
+                                                        height="24"></iconify-icon></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex box align-items-center justify-content-between">
+                                <div class="contains">
+                                    <h4>Green Chilli</h4>
+                                    <b>$14.99</b>
+                                    <del>$20.99</del>
 
-                        <div class="preview_icons d-flex">
-                            <ul>
-                                <li>
-                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
-                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
-                                                height="24"></iconify-icon></span></a>
-
-                                </li>
-                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
-                                                icon="solar:eye-linear" width="24"
-                                                height="24"></iconify-icon></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex box align-items-center justify-content-between">
-                        <div class="contains">
-                            <h4>Surjapur Mango</h4>
-                            <b>$14.99</b>
-
-
-                            <div class="icons">
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9734;</span>
+                                    <div class="icons">
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span class="ash">&#9734;</span>
+                                        <span class="ash">&#9734;</span>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                            height="24"></iconify-icon></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="cart">
-                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
-                                    height="24"></iconify-icon></span>
+                        <!-- test -->
+
+                        <!-- vegetables -->
+
+                        <!-- fruits -->
+                        <div
+                            class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-1 type-2 tag-1 tag-2 tag-3 tag-5 tag-13">
+                            <div class="img-box">
+                                <img src="../images/categories/Fruit/Product1.png" alt="product1" class="img-fluid">
+                                <p>Sale <span>50%</span></p>
+                                <div class="preview_icons d-flex">
+                                    <ul>
+                                        <li>
+                                            <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                                href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                        height="24"></iconify-icon></span></a>
+
+                                        </li>
+                                        <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="See More"
+                                                href="#"><span><iconify-icon icon="solar:eye-linear" width="24"
+                                                        height="24"></iconify-icon></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex box align-items-center justify-content-between">
+                                <div class="contains">
+                                    <h4>Green Apple</h4>
+                                    <b>$14.99</b>
+                                    <del>$20.99</del>
+
+                                    <div class="icons">
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9734;</span>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                            height="24"></iconify-icon></span>
+                                </div>
+                            </div>
                         </div>
+
+
+                        <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-1 type-2 tag-13">
+                            <div class="img-box">
+                                <img src="../images/categories/Fruit/malta.png" alt="malta" class="img-fluid">
+
+                                <div class="preview_icons d-flex">
+                                    <ul>
+                                        <li>
+                                            <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                                href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                        height="24"></iconify-icon></span></a>
+
+                                        </li>
+                                        <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="See More"
+                                                href="#"><span><iconify-icon icon="solar:eye-linear" width="24"
+                                                        height="24"></iconify-icon></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex box align-items-center justify-content-between">
+                                <div class="contains">
+                                    <h4>Fresh Indian Malta</h4>
+                                    <b>$20.00</b>
+
+
+                                    <div class="icons">
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9734;</span>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                            height="24"></iconify-icon></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-1 type-2 tag-13">
+                            <div class="img-box">
+                                <img src="../images/categories/Fruit/mango.png" alt="mango" class="img-fluid">
+
+                                <div class="preview_icons d-flex">
+                                    <ul>
+                                        <li>
+                                            <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                                href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                        height="24"></iconify-icon></span></a>
+
+                                        </li>
+                                        <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                                data-bs-placement="left" data-bs-title="See More"
+                                                href="#"><span><iconify-icon icon="solar:eye-linear" width="24"
+                                                        height="24"></iconify-icon></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex box align-items-center justify-content-between">
+                                <div class="contains">
+                                    <h4>Surjapur Mango</h4>
+                                    <b>$14.99</b>
+
+
+                                    <div class="icons">
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9734;</span>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                            height="24"></iconify-icon></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- fruits -->
+
+                        <!-- test -->
+
                     </div>
+                    <!-- row -->
+
+                    <div class="page d-flex align-items-center justify-content-center ">
+                        <span class="left"><iconify-icon icon="lsicon:left-filled" width="20" height="20"></iconify-icon></span>
+                        <p class="mb-0">1</p>
+                        <p class="mb-0">2</p>
+                        <p class="mb-0">3</p>
+                        <p class="mb-0">4</p>
+                        <p class="mb-0">5</p>
+                        <p class="mb-0">...</p>
+                        <p class="mb-0">21</p>
+
+                        <span class="right"><iconify-icon icon="lsicon:right-filled" width="20" height="20"></iconify-icon></span>
+                    </div>
+
                 </div>
 
 
-
-                <!-- fruits -->
-
-                <!-- test -->
-
-                </div>
-                <!-- row -->
-
-                </div>
             </div>
+
+
     </section>
 
 
@@ -1392,7 +1494,7 @@
                 <!-- <div class="col-xl-2 col-lg-2 col-md-3 img-box">
                 <img src="./assets/images/subscribe/Logo.png" alt="logo" class="img-fluid">
             </div> -->
-                <div class="col-xl-4 col-lg-4 col-md-7 contains">
+                <div class="col-xl-4 col-lg-4 contains">
                     <p>Subscribe Our Newsletter</p>
                     <p>Pellentesque eu nibh eget mauris congue mattis matti.</p>
                 </div>

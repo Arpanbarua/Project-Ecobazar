@@ -1115,6 +1115,23 @@ header .contains
     
 }
 
+
+
+     #filtered .cat-buttons.prices .accordion-body
+    {
+       padding: 0 10px;
+    }
+    
+     #filtered .cat-buttons.prices 
+     {
+        padding-bottom: 20px;
+     }
+
+     #filtered .sale > h5 
+     {
+        text-align: center;
+     }
+
     /*-------- featured css end ----------*/
 
 
@@ -1187,6 +1204,8 @@ header .contains
         width: calc(50% - 24px);
         margin-right: 12px;
     }
+
+   
 
 
 }
