@@ -1840,7 +1840,11 @@ header .second {
     padding-top: 50px;
     border-bottom: 1px solid var(--gren-gray-scale-200);
     z-index: 2;
+    position: relative;
+    
 }
+
+
 
 #news .row 
 {
@@ -2290,9 +2294,9 @@ color: var(--gray-scale-gray--900);
     padding-top: 356px;
     border-top: 1px solid var(--gray-scale-gray--200);
     background: var(--gren-gray-scale-50);
-    position: relative;
-    margin-top: -368px;
-    z-index: -1;
+    position: relative; 
+    margin-top: -360px;
+    z-index: 0;
 }
 #subscribe .row 
 {
