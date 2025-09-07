@@ -1822,6 +1822,8 @@ header .second {
     /* padding: 28px 32px; */
 
     line-height: 0;
+    display: inline-flex;
+    align-items: center;
 
     color: var(--gray-scale-white);
 }
