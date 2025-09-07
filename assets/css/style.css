@@ -211,6 +211,7 @@ header .second {
     justify-content: center;
     padding-right: 16px;
     border-right: 1px solid var(--gray-scale-gray--200);
+    color: black;
 }
 
 #heading .contains .contains_two {
