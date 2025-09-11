@@ -1134,18 +1134,28 @@ header .contains
 
     /*-------- featured css end ----------*/
 
-
-
-
-
-
-
-
-
-
-
     /* -----------------------------------------------  vegetable.html ------------------------------------------------------------------------*/
+   
+   
+    /* -----------------------------------------------  wishlist.html ------------------------------------------------------------------------*/
 
+    #wishlist table .cart, #wishlist table .cart-out
+{
+    border-radius: 12px;
+padding: 10px;
+background: var(--branding-success);
+text-decoration: none;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+line-height: 120%;
+color: var(--gray-scale-white);
+display: inline-flex;
+align-items: center;
+white-space: nowrap;
+margin-right: 10px;
+
+}
 
 
 }
